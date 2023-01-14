@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="./FontAwesome files/fontawesome.js"></script>
+        <link rel ="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+        
+        <style>
+          body{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box ;
+                  font-family: 'Poppins',sans-serif;
+              
+              }
+            p {color: rgb(255, 255, 255);
+            font-family: sans-serif;
+          font-size: 19px;}
+           h2 {font-size: 40px;
+            color: rgb(0, 34, 157);}
+            h3 {font-size: 25px;
+            color: rgb(17, 29, 29);
+          font-family: 'Times New Roman', Times, serif;}
+          .dot {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(207, 31, 31);
+            border-radius: 50%;
+            display: inline-block;
+          }
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 17px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+          a
+          {
+              position: relative;
+              padding: 5px 20px ;
+              display: inline-block;
+              margin-top: 20px;
+              text-decoration: none;
+              color: #fff;
+              background: #111;
+          }
+              footer
+              {
+               bottom: 12px;
+               width: 100%;
+              }
+              
+              .main-content{
+                border: 10px solid black;
+                  grid-area: footer_section;
+                  display: flex;
+              }
+              
+              .main-content .box{
+                  flex-basis: 50%;
+                  padding: 10px 20px;
+              }
+              
+              .box h2{
+                  color: #ffffff;
+                  font-size: 1.125rem;
+                  font-weight: 600;
+                  text-transform: uppercase;
+              }
+              
+              .box .content{
+                  color: #ffffff;
+                  margin: 20px 0 0 0;
+                  font-size: large;
+              }
+              
+              .left .content p{
+                  color: #ffffff;
+                  text-align: justify;
+              }
+              
+              .left .content .social{
+                  color: #ffffff;
+                  margin: 20px 0 0 0;
+              }
+              
+              .left .content .social a{
+                  color: #ffffff;
+                  margin: 20px 0 0 0 ;
+              }
+              
+              .left .content .social a span{
+                  height: 40px;
+                  width: 40px;
+                  background: #0775a3;
+                  line-height: 40px;
+                  text-align: center;
+                  font-size: 18px;
+                  border-radius: 5px;
+                  transition: 0.3s;
+              
+              }
+              
+              .left .content .social a span:hover{
+                  background: #3f0eb8;
+              } 
+
+        .fit {
+          height: 15vh;
+            width: 100%;
+                    }
+          nav{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-left: 60%;
+            padding-left: 10%;
+            padding-right: 10%;
+            backdrop-filter: blur(5px);
+          }
+          .logo{
+            color: aliceblue;
+            font-size: 30px;
+          }
+          nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+          }
+
+          nav ul li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .header ul li a:hover{
+            color: brown;
+            transition: .3s;
+          }
+          h1 {
+                font-size: calc(15px + 6vh);
+                line-height: calc(15px + 9vh);
+              /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                  0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+                color: #fccaff; */
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                  color: #fff6a9;
+                font-family: "Sacramento", cursive;
+                text-align: center;
+                animation: blink 12s infinite;
+                -webkit-animation: blink 12s infinite;
+              }
+              
+              @-webkit-keyframes blink {
+                20%,
+                24%,
+                55% {
+                  color: #111;
+                  text-shadow: none;
+                }
+              
+                0%,
+                19%,
+                21%,
+                23%,
+                25%,
+                54%,
+                56%,
+                100% {
+              /*     color: #fccaff;
+                  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                  color: #fff6a9;
+                }
+              }
+              
+              @keyframes blink {
+                20%,
+                24%,
+                55% {
+                  color: #111;
+                  text-shadow: none;
+                }
+              
+                0%,
+                19%,
+                21%,
+                23%,
+                25%,
+                54%,
+                56%,
+                100% {
+              /*     color: #fccaff;
+                  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                  color: #fff6a9;
+                }
+              }
+
+              #text {
+                padding: 20px 20px;
+                display: inline-block;
+                color: #510080;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 3em;
+                overflow: hidden;
+                font-family: 'Times New Roman', Times, serif;
+            }
+              
+         
+            /*creating animation effect*/
+            #text:hover {
+                color: #111;
+                background: #14d8ff;
+                box-shadow: 0 0 50px #14d8ff;
+            }
+
+            .header {
+            z-index: 1;
+            background-image: linear-gradient(75deg ,#b245e9,#0061df);
+            background-size: 400% 400%;
+            overflow: hidden;
+            width: 100%;
+            animation: animate 15s ease infinite;
+          }
+
+          @keyframes animate {
+            0%{
+              background-position: 0 50%;
+            }
+            50%{
+              background-position: 100% 50%;
+            }
+            100%{
+              background-position: 0 50%;
+            }
+          }
+          :root {
+            /* Base font size */
+            font-size: 10px;   
+            
+            /* Set neon color */
+            --neon-text-color: #f40;
+            --neon-border-color: #08f;
+          }
+
+        th  {
+              font-size: 15px;
+              font-style: italic;
+              color: #fff;
+              padding: 2rem 4rem 3.5rem;
+              border: 0.4rem solid #fff;
+              border-radius: 1.5rem;
+              text-transform: uppercase;
+              animation: flicker 1.5s infinite alternate;     
+            }
+            
+            th::-moz-selection {
+              background-color: var(--neon-border-color);
+              color: var(--neon-text-color);
+            }
+            
+            th::selection {
+              background-color: var(--neon-border-color);
+              color: var(--neon-text-color);
+            }
+            
+            th:focus {
+              outline: none;
+            }
+            
+            /* Animate neon flicker */
+            @keyframes flicker {
+                
+                0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                  
+                    text-shadow:
+                        -0.2rem -0.2rem 1rem #fff,
+                        0.2rem 0.2rem 1rem #fff,
+                        0 0 2rem var(--neon-text-color),
+                        0 0 4rem var(--neon-text-color),
+                        0 0 6rem var(--neon-text-color),
+                        0 0 8rem var(--neon-text-color),
+                        0 0 10rem var(--neon-text-color);
+                    
+                    box-shadow:
+                        0 0 .5rem #fff,
+                        inset 0 0 .5rem #fff,
+                        0 0 2rem var(--neon-border-color),
+                        inset 0 0 2rem var(--neon-border-color),
+                        0 0 4rem var(--neon-border-color),
+                        inset 0 0 4rem var(--neon-border-color);        
+                }
+                  
+                  20%, 24%, 55% {        
+                      text-shadow: none;
+                      box-shadow: none;
+                  }    
+              }
+
+              .container {
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+      }
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        transition: .7s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      .container:hover .overlay {
+        opacity: 1;
+      }
+          
+        </style>
+    </head>
+    <body>
+      <div class="header">
+        <div class="fit">
+          <nav>
+            <h2 class="logo">Force <span style="color: brown;">Fitness</span></h2>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">plans</a></li>
+              <li><a href="#">exercise</a></li>
+              <li><a href="#">Diet</a></li>
+              <li><a href="#">login/sign up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <center><h1>The Things That Come With Age:</h1></center>
+
+        <p>One would hope that just as good wine only gets better with age, so will every good person.
+           Although age brings along wisdom, experience, and inner peace, it is also accompanied by certain negative aspects,
+            such as physical changes, sometimes health problems, and weight gain. Even if you have been slim your whole life,
+             you may put on a couple of pounds as you age. But the worst thing about this is not the weight gain itself, 
+             but the fact that it is more difficult to shed pounds when you are older. In this article you will find out more about why 
+             it is so hard to lose weight after 40, what can help you stay in shape, and what are the main principles of a 40-year-old male diet plan.let's start.</p>
+
+            <center><h1>Maintain and Believe Yourself</h1></center>
+            
+            <h2 id="text"><span class="dot">&#9679</span>  Count Your Calories</h2>
+
+            <p>No matter what age you are, if your goal is to stay toned, you need to make sure that you burn all the calories that you consume. If you dream of slimming down,
+               then calorie restriction is your go-to. To successfully shed some pounds, you need to reduce your caloric intake so that you eat 
+               less than you burn. Now, you want to make sure that you don't cut your energy intake too drastically. Experts recommend reducing your 
+               daily caloric intake by 500-1,000 calories. Such a move will result in a loss of 1-2 pounds (0.45-1kg) of fat a week. And if you don’t
+                need to shed pounds, but would rather maintain your current weight, then use a calculator to find out how many calories your body requires,
+                 and make sure that you don't consume more.</p>
+
+            <h2 id="text"><span class="dot">&#9679</span>  Plants Are Your Best Friends :</h2>
+
+            <p>By the time you hit 40, you should have realized how important your food choice is and that it is one of the major factors effecting your wellness.
+               Of course, you can slim down by reducing your calorie intake, but which foods you get those calories from is also extremely important.
+                Even a small kid knows that you should eat your veggies if you want to stay healthy and that an apple a day keeps a doctor away. 
+                Unfortunately, many people tend to forget that and drift away from a healthy lifestyle by not eating enough plant-based foods. 
+                But if you want to stay toned or burn a couple of inches of excess fat, you need to make sure that you stick to a plant-rich diet, 
+                packed with fruits and veggies, beans and legumes, nuts and seeds, and whole grains.<br>
+              Why plants? - you may ask. There are a couple of reasons why plant-based foods are such a good choice for any healthy weight loss diet
+               plan for men and women, including:</p>
+
+               <center>
+                <img src="../.images/madult1.webp" alt="photo" class="center" style="width: 700px; height: 400px;">
+                </center>
+
+                <center><h1>Plan your meal now !!</h1></center>
+
+                <table>
+                  <tr>
+                    <th contenteditable spellcheck="false">Meal Time</th>
+                    <th contenteditable spellcheck="false">Food Group</th>
+                    <th contenteditable spellcheck="false">Raw Amounts</th>
+                    <th contenteditable spellcheck="false">Cooked Recipe</th>
+                    <th contenteditable spellcheck="false">Servings</th>
+                  </tr>
+                  
+                  <tr>
+                    <th rowspan="5" contenteditable spellcheck="false">breakfast</th>
+                    <td>Milk</td>
+                    <td>100ml</td>
+                    <td>tea / milk / coffee</td>
+                    <td>1/2 Cups</td>
+                  </tr>
+                  <tr>
+                    <td>sugar</td>
+                    <td> 15 g </td>
+                    <td>tea / milk / coffee</td>
+                    <td>2 Cups</td>
+                  </tr>
+                  <tr>
+                    <td> - </td>
+                    <td> - </td>
+                    <td>tea / milk / coffee</td>
+                    <td>1 Cups</td>
+                  </tr>
+                  <tr>
+                    <td>Cereals</td>
+                    <td>70 g </td>
+                    <td> Breakfast item </td>
+                    <td> - </td>
+                  </tr>
+                  <tr>
+                    <td>Pulses</td>
+                    <td> 20 g </td>
+                    <td> - </td>
+                    <td> - </td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="6" contenteditable spellcheck="false">Lunch</th>
+                    <td>Cereals</td>
+                    <td>150 g</td>
+                    <td>Rice</td>
+                    <td>2 Cups</td>
+                  </tr>
+                  <tr>
+                    <td> - </td>
+                    <td> - </td>
+                    <td>Pulkas</td>
+                    <td>2 Nos.</td>
+                  </tr>
+                  <tr>
+                    <td> Vegetables </td>
+                    <td> 150 g </td>
+                    <td>Veg. Curry</td>
+                    <td>3/4 Cup</td>
+                  </tr>
+                  <tr>
+                    <td>Pulses</td>
+                    <td>20 g</td>
+                    <td> Dhal </td>
+                    <td> 1/2 Cup </td>
+                  </tr>
+                  <tr>
+                    <td> Vegetables </td>
+                    <td> 50 g </td>
+                    <td> Veg. Salad </td>
+                    <td> 7-8 Slices</td>
+                  </tr>
+                  <tr>
+                    <td>Milk</td>
+                    <td> 100 ml </td>
+                    <td> Curd </td>
+                    <td> 1/2 Cup</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3" contenteditable spellcheck="false">Snacks</th>
+                    <td>Cereals</td>
+                    <td> 50 g </td>
+                    <td> Snack</td>
+                    <td> - </td>
+
+                  </tr>
+                  <tr>
+                    <td> Milk </td>
+                    <td> 50 ml </td>
+                    <td> Tea </td>
+                    <td> 1 Cup</td>
+                  </tr>
+                  <tr>
+                    <td>sugar</td>
+                    <td>10 g</td>
+                    <td> - </td>
+                    <td> - </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="7" contenteditable spellcheck="false">Dinner</th>
+                    <td>Cereals</td>
+                    <td> 150 g </td>
+                    <td> Rice </td>
+                    <td> 2 Cups</td>
+                  </tr>
+                  <tr>
+                    <td> - </td>
+                    <td> - </td>
+                    <td>Pulkas</td>
+                    <td>2 Nos.</td>
+                  </tr>
+                  <tr>
+                    <td> Vegetables </td>
+                    <td> 150 g </td>
+                    <td>Veg. Curry</td>
+                    <td>3/4 Cup</td>
+                  </tr>
+                  <tr>
+                    <td>Pulses</td>
+                    <td>20 g</td>
+                    <td> Dhal </td>
+                    <td> 1/2 Cup </td>
+                  </tr>
+                  <tr>
+                    <td> Vegetables </td>
+                    <td> 50 g </td>
+                    <td> Veg.Raita</td>
+                    <td> - </td>
+                  </tr>
+                  <tr>
+                    <td>Milk or curd </td>
+                    <td> 50 ml </td>
+                    <td> - </td>
+                    <td> 1/2 Cup</td>
+                  </tr>
+                  <tr>
+                    <td>Fruit</td>
+                    <td> 100 g </td>
+                    <td> Seasonal </td>
+                    <td> 1 Medium</td>
+                  </tr>
+                </table><br>
+              <p>1 Cup = 200 ml</p>
+              <p><b>Note : </b> For Non-Vegetarians / Substitute one pulse portion with one
+                portion of egg/meat/chicken/fish.</p>
+
+              <p><b>Breakfast Items :</b>Idli - 4 Nos. / Dosa - 2 Nos./ Upma - 1-1/2 cup
+                /Bread - 4 Slices/ Porridge - 2 Cups/ Corn flakes with milk - 2 Cups.</p>
+
+              <p><b>Snacks :</b>Poha - 1 Cup/ Toast - 2 Slices / Samosa - 2 / Sandwiches -
+                2/ Biscuits - 5</p>
+
+                <center><h3><a href="#section-1">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+                <center><h1>food to take regularly:</h1></center>
+
+                 <h2 id="text"><b>1. Whole Grains :</b></h2><p>  whole grains ensures that you get fiber, plant proteins, vitamins, minerals and a variety of phytochemicals, which will have an immense positive effect on your overall health. The most fabulous nutrient that whole grains provide is fiber, which is known for its positive effect on blood sugar, LDL cholesterol, BP, and weight management. Fiber keeps you full for a longer time, preventing mid-meal binges. It slowly releases glucose into the blood stream, which prevents the blood sugar from spiking, thus reducing the risk of diabetes.The lactic acid of whole grains encourages the growth of good bacteria, which helps in better digestion, better absorption of nutrients and may also boost the immune system. Have at least three servings (60-90gms) of whole grains daily.
+                   
+                  cover grains
+                  
+                 <h2 id="text"><b>2. Beans : </b></h2><p>  around food often tend to stick to carbs, antioxidants and fats. We forget to pay heed to proteins.
+                   Proteins are present in very cell of our body; half of the body’s proteins are in our muscles and the rest in bones,
+                    cartilages and skin. Beans or rajma are one of the healthiest forms of plant proteins. 
+                    They contains eight of the nine essential amino acids, lacking only in Methionine, which is present in cereals.<br><br> 
+                    A combination of the two complement each other and add quality protein to our food.Both soluble and insoluble fibers in beans 
+                    protect us against diabetes and cardiovascular risk factors. Its low glyceamic index prevents sugar levels from rising rapidly 
+                    after a meal. Proteins help maintain the vitality of the skin and hair as well. <br><br>Other essential nutrients like Folate, 
+                    Magnesium, and Thiamine that this wonder bean provides help in maintaining a healthy immune system, boost energy levels, 
+                    prevent premature greying, anaemia, canker sores, etc. They aid in transporting calcium and potassium in our body in a way
+                     that helps our heart and muscles contract and protect against age-related impairment of mental function and senility.</p>
+                   
+          
+                 <h2 id="text"><b>3. Walnuts : </b></h2><p> Known for its healthy oil profile, Vitamin E and Melatonin, walnuts are also a very rich source of antioxidants. 
+                  These compounds are very essential for health as they scavenge the free radicals, slow down the ageing process and age related 
+                  deterioration. Research has highlighted the antioxidant and anti-inflammatory benefits of walnuts, making it top the 
+                  food charts for protection against metabolic syndrome. <br><br>Rare phytonutrients like quinone juglone and tannin tellimagrandin or the 
+                  flavonol morin have shown a decreased risk of cancers of the prostrate. The omega -3 (alpha lenolenic acid) present in the nuts is 
+                  a protection against cardiovascular diseases because of its anti-inflammatory activity.Research has proven that even four walnuts 
+                  can improve the levels of ALA significantly. Walnuts also make for a great snack for weight watchers. They must be eaten whole, 
+                  with their skin intact, as most of its phenols are in its brown covering. An ounce is sufficient.</p>
+                   
+              
+                 <h2 id="text"><b>4. Green Tea :</b></h2><p> The health benefits of tea are well documented. Their antioxidant properties help fight diseases. 
+                  Green tea being the least processed contains the maximum amounts of Catechin, a particularly potent antioxidant. 
+                  Regular consumption of green tea has been found to be beneficial for BP, prevention of cardiovascular diseases, and strokes. <br><br>
+                  A study by the Harvard Medical School, Brigman, confirmed that green tea can reduce BP slightly, total cholesterol and a marker of chronic 
+                  inflammation which is linked to cardiovascular diseases. Another review of Japanese studies published in the journal ofNutrition 
+                  highlighted the benefits of green tea against strokes and cardiovascular diseases.Consumption of green tea has also been linked to 
+                  protection against stomach and esophageal cancer. A study in China established that men who drank green tea regularly were less 
+                  prone to prostate cancer.</p>
+                   
+                  
+                 <h2 id="text"><b>5. Eggplant : </b></h2><p>The humble baigan is usually the last on our vegetable shopping list. Change that mind set, this beautiful 
+                  purple vegetable is a treasure trove of nutrients that will help you stay healthy. It is loaded with antioxidants, phytonutrients,
+                   phenolic compounds and flavonoids, is low calories, and contains lots of fiber and water content.<br><br> The rich purple colour is an 
+                   indication of the anthocyanins present in the vegetable, of which a rare and extremely beneficial one is Nasunin. 
+                   This is a chief contributor to fighting free radical damage to the body – the cause that leads to the development of diseases 
+                   and ageing. Nasunin was also found to have a protective effect on the DNA and cell membrane against oxidative stress. <br><br>
+                   You should also eat baigan for the 13 types of phenolic acids that help fight cancer. Chlorogenic acid is very beneficial 
+                   against cancer tumour growth, and has anti-viral and anti-microbial properties. Research has found eggplant to have potent 
+                   cardio protective compounds too. It also helps in digestive health because of its water and fiber content. </p>
+
+                   <center><h3><a href="#section-2">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+                <center><h1>foods to avoid at your 40's !!</h1></center>
+
+                <h2 id="text">1. Margarine</h2 >
+
+                <p>Most margarine tubs contain artery-clogging saturated fats and are loaded with processed oils. As if that isn't bad enough, 
+                  many margarine brands use propylene glycol, a synthetic compound, which research has shown to increase cholesterol levels 
+                  and cause weight gain. For a healthier alternative, swap in grass-fed butter or substitute with healthy oils such as extra-virgin olive oil and coconut oil.</p>
+                  
+                  <h2 id="text" >2. Artificial Sweeteners</h2 >
+
+                  <p>While artificial sweeteners don't add calories to your diet, they can increase your cravings for more sugar. In fact, research shows that aspartame, sucralose,
+                     and stevioside can actually lead to weight gain, diabetes, and other health conditions. 
+                     If you want to sweeten your baked goods smartly, replace sugar with maple syrup, raw honey, or unsweetened applesauce.</p>
+
+                     <h2 id="text" >3. Soda</h2 >
+
+                  <p>Choosing soda over H2O is a bad decision, but exactly makes the caramel-colored soft drink so bad for you? Sugary drinks like soda has toxic chemicals. A 2014 study
+                     from Consumer Reports and Johns Hopkins Center for a Livable Future showed that the chemical 4-methylimidazole (4-MEI) could increase your risk of developing cancer.
+                      Check out these other disturbing facts about soda.</p>
+
+                  <h2 id="text" >4.	Chinese Takeout</h2 >
+
+                  <p>The high levels of sodium and sugar in dishes like General Tso's and chicken lo mein are a solid reason enough to stay away from Chinese takeout.</p>
+
+                  <h2  id="text" >5. Flavored Yogurt</h2 >
+
+                  <p>Unlike Greek yogurt, which is packed with satiating protein and is low in sugar, flavored yogurts are loaded with added sugars.
+                     If you're want to add some flavor, fiber, and texture to your Greek yogurt, top it with some fiber-rich fruit, chia or hemp seeds, and nuts.</p>
+
+                     <center><h3><a href="#section-3">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+                  <center><h1>Benefits of maintaining a good diet in 40's : </h1 ></center>
+
+                  <p> there is no magic fountain of youth that can stop or dramatically slow down aging. However, several foods can help reduce or offset the
+                     effects of aging on the human body. While scientific evidence on some of these anti-aging foods is spotty, others have a good track record 
+                     of functioning as antioxidants, promoting healthy skin and eyes, strengthening connective tissues, and more. 
+                     These foods include red bell peppers, blueberries, broccoli, spinach, and similar leafy greens, papaya, nuts including walnuts and almonds, 
+                     pomegranate seeds, and avocado</p>
+
+                     <p>Making dietary changes at age 40 and beyond does not need to be onerous or restrictive. Simple, moderate replacements or attention to
+                       when and what you eat can go a long way toward ensuring your health and longevity. Your body is changing, and your diet needs to change
+                        a bit with it. The best diets for men over 40 can help reduce the risk of developing diseases, improve your immune system, protect your bones, 
+                        tissues, and organs, and allow you to live a long, happy, healthy life.</p>
+
+                    <p>A meal plan and good nutrition can help to maintain energy levels and the overall health of the elderly. 
+                      Meal plans provide a structure for what foods to eat and when, while good nutrition means eating the right types of foods 
+                      in order to get the nutrients the body needs. Both of these things can help ensure that the elderly get the energy needed to stay active and healthy.</p>
+
+                      <center><h2 id="text">Images for plan your diet!</h2>
+
+                        <p id="section-1"> Keep your cursor on the image and it will show u the details. </p></center>
+          
+                        <table>
+          
+                         <th>
+                            <div class="container">
+                              <img src="../.images/Tea.jpg" alt="travel" class="image" style="width: 100%">
+                              <div class="overlay">Tea</div>
+                            </div>
+                         </th>
+          
+                         <th>
+                          <div class="container">
+                            <img src="../.images/coffee.jpg" alt="travel" class="image" style="width: 100%">
+                            <div class="overlay">coffee</div>
+                          </div>
+                       </th>
+          
+                       <th>
+                        <div class="container">
+                          <img src="../.images/milk.jpg" alt="travel" class="image" style="width: 100%">
+                          <div class="overlay">Milk</div>
+                        </div>
+                     </th>
+      
+                     <th>
+                      <div class="container">
+                        <img src="../.images/Cereals.jpg"  alt="travel" class="image" style="width: 100%">
+                        <div class="overlay">Cereals</div>
+                      </div>
+                        </th>
+                      </table>
+                       
+                        <table>
+          
+                         <th>
+                            <div class="container">
+                              <img src="../.images/pulses.jpg" alt="travel" class="image" style="width: 100%">
+                              <div class="overlay">Pulses</div>
+                            </div>
+                         </th>
+          
+                         <th>
+                          <div class="container">
+                            <img src="../.images/phulkas.jpg" alt="travel" class="image" style="width: 100%">
+                            <div class="overlay">Phulkas</div>
+                          </div>
+                         </th>
+            
+                         <th>
+                          <div class="container">
+                            <img src="../.images/rice.jpg" alt="travel" class="image" style="width: 100%">
+                            <div class="overlay">Rice</div>
+                          </div>
+                       </th>
+        
+                       <th>
+                        <div class="container">
+                          <img src="../.images/veg curry.jpg"  alt="travel" class="image" style="width: 100%">
+                          <div class="overlay">Veg Curry</div>
+                        </div>
+                          </th>
+                        </table>
+
+                          <table>
+            
+                           <th>
+                              <div class="container">
+                                <img src="../.images/North-Indian-Homestyle-Toor-Dal-2-3.jpg" alt="travel" class="image" style="width: 190px ; height: 200px;">
+                                <div class="overlay">Dhal</div>
+                              </div>
+                           </th>
+            
+                           <th>
+                            <div class="container">
+                              <img src="../.images/green.jpg" alt="travel" class="image" style="width: 180px ; height: 200px;">
+                              <div class="overlay">Salad</div>
+                            </div>
+                         </th>
+            
+                           <th>
+                            <div class="container">
+                              <img src="../.images/youghurttur.jpg" alt="travel" class="image" style="width: 180px ; height: 200px;">
+                              <div class="overlay">Curd</div>
+                            </div>
+                         </th>
+          
+                         <th>
+                          <div class="container">
+                            <img src="../.images/veg raita.jpg"  alt="travel" class="image" style="width: 100%">
+                            <div class="overlay">Veg Raita</div>
+                          </div>
+                            </th>
+                          </table>
+
+                          <table>
+            
+                            <th>
+                               <div class="container">
+                                 <img src="../.images/vegetables.jpg" alt="travel" class="image" style="width: 100%">
+                                 <div class="overlay">Vegetables</div>
+                               </div>
+                            </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/boiledegg.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">Eggs</div>
+                             </div>
+                          </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/chickenleg.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">Chicken</div>
+                             </div>
+                          </th>
+           
+                          <th>
+                           <div class="container">
+                             <img src="../.images/meat.jpg"  alt="travel" class="image" style="width: 100%">
+                             <div class="overlay">Meat</div>
+                           </div>
+                             </th>
+                           </table>
+
+                           <table>
+            
+                            <th>
+                               <div class="container">
+                                 <img src="../.images/cooked fish.jpg" alt="travel" class="image" style="width: 100%">
+                                 <div class="overlay">Fish</div>
+                               </div>
+                            </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/idli.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">Idli</div>
+                             </div>
+                          </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/dosa.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">Dosa</div>
+                             </div>
+                          </th>
+           
+                          <th>
+                           <div class="container">
+                             <img src="../.images/upma.jpg"  alt="travel" class="image" style="width: 100%">
+                             <div class="overlay">Upma</div>
+                           </div>
+                             </th>
+                           </table>
+
+                           <table>
+            
+                            <th>
+                               <div class="container">
+                                 <img src="../.images/bread.jpg" alt="travel" class="image" style="width: 100%">
+                                 <div class="overlay">Bread</div>
+                               </div>
+                            </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/porridge.jpg" alt="travel" class="image" style="width: 100%">
+                              <div class="overlay">Porridge</div>
+                             </div>
+                          </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/cornflake.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">cornflake with milk</div>
+                             </div>
+                          </th>
+           
+                          <th>
+                           <div class="container">
+                             <img src="../.images/poha.jpg"  alt="travel" class="image" style="width: 100%">
+                             <div class="overlay">Poha</div>
+                           </div>
+                             </th>
+                           </table>
+
+                           <table>
+            
+                            <th>
+                               <div class="container">
+                                 <img src="../.images/toast.jpg" alt="travel" class="image" style="width: 100%">
+                                 <div class="overlay">Toast</div>
+                               </div>
+                            </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/sanwiches.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">Sandwiches</div>
+                             </div>
+                          </th>
+             
+                            <th>
+                             <div class="container">
+                               <img src="../.images/samosa.jpg" alt="travel" class="image" style="width: 100%">
+                               <div class="overlay">Samosa</div>
+                             </div>
+                          </th>
+           
+                          <th>
+                           <div class="container">
+                             <img src="../.images/Biscuits.jpg"  alt="travel" class="image" style="width: 100%">
+                             <div class="overlay">Biscuits</div>
+                           </div>
+                             </th>
+                           </table>
+
+                           <center><h2 id="text">Images for right food to take:</h2></center>
+            
+                       <center><p id="section-2"> keep cursor on the image for details. </p></center>
+
+                       <table>
+            
+                        <th>
+                           <div class="container">
+                             <img src="../.images/wholegrains.webp" alt="travel" class="image" style="width: 100%">
+                             <div class="overlay">Wholegrains</div>
+                           </div>
+                        </th>
+         
+                        <th>
+                         <div class="container">
+                           <img src="../.images/beans.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Beans</div>
+                         </div>
+                      </th>
+         
+                        <th>
+                         <div class="container">
+                           <img src="../.images/walnut.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Walnuts</div>
+                         </div>
+                      </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/green tea.jpg"  alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Green tea</div>
+                       </div>
+                         </th>
+
+                         <th>
+                          <div class="container">
+                            <img src="../.images/egg plant.jpg"  alt="travel" class="image" style="width: 100%">
+                            <div class="overlay">Egg plant</div>
+                          </div>
+                            </th>
+                       </table>
+
+                       <center><h2 id="text">Images to avoid eating unhealthy food</h2></center>
+           
+                  <center><p id="section-3">Keep the cursor on the image to know more details.</p></center>
+
+                       <table>
+            
+                        <th>
+                           <div class="container">
+                             <img src="../.images/margarine.webp" alt="travel" class="image" style="width: 100%">
+                             <div class="overlay">Margarine</div>
+                           </div>
+                        </th>
+         
+                        <th>
+                         <div class="container">
+                           <img src="../.images/artificial sweetner.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Artificial sweetner</div>
+                         </div>
+                      </th>
+         
+                        <th>
+                         <div class="container">
+                           <img src="../.images/soda.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Soda</div>
+                         </div>
+                      </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/chinese food.jpg"  alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Chinese food</div>
+                       </div>
+                         </th>
+
+                         <th>
+                          <div class="container">
+                            <img src="../.images/flavoured youghurt.jpg"  alt="travel" class="image" style="width: 100%">
+                            <div class="overlay">flavoured Youghurt</div>
+                          </div>
+                            </th>
+                       </table>
+
+                      <footer>
+                        <div class="main-content">
+                          <div class="left box">
+                            <h3>About us</h3>
+                            <div class="content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo praesentium assumenda sequi corporis, 
+                                est similique ipsa rem tempore aspernatur perspiciatis, provident accusantium eum laborum iure veritatis vero distinctio esse?</p>
+                              <div class="social">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="#"><span class="fab fa-youtube"></span></a>
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="center box">
+                            <h3>Address</h3>
+                            <div class="content">
+                              <div class="place">
+                                <span class="fa fa-map-marker"></span>
+                                <span class="text">Mathura,Vrindavan</span>                                     
+                              </div>
+                              <div class="phone">
+                                <span class="fa fa-phone"></span>
+                                <span class="text">91+ 7894561230</span>
+                              </div>
+                              <div class="email">
+                                <span class = "fa fa-envelope"></span>
+                                <span class = "text">abc@example.com</span>
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="right box">
+                            <h3>Contact us</h3>
+                            <div class="content">
+                              <form action="#">
+                                <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" required>
+                                </div>
+                                <div class="msg">
+                                  <div class="text">Message *</div>
+                                  <textarea rows="2" cols="25" required></textarea>
+                                </div>
+                                <div class="btn">
+                                  <button type="submit">Send</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+    </body>
+</html>

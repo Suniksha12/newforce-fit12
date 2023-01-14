@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="./FontAwesome files/fontawesome.js"></script>
+        <link rel ="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+        
+        <style>
+          body{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box ;
+                  font-family: 'Poppins',sans-serif;
+              
+              }
+            p {color: rgb(255, 255, 255);
+            font-family: sans-serif;
+          font-size: 19px;}
+           h2 {font-size: 40px;
+            color: rgb(0, 34, 157);}
+            h3 {font-size: 25px;
+            color: rgb(17, 29, 29);
+          font-family: 'Times New Roman', Times, serif;}
+          .dot {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(207, 31, 31);
+            border-radius: 50%;
+            display: inline-block;
+          }
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 17px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+          a
+          {
+              position: relative;
+              padding: 5px 20px ;
+              display: inline-block;
+              margin-top: 20px;
+              text-decoration: none;
+              color: #fff;
+              background: #111;
+          }
+              footer
+              {
+               bottom: 12px;
+               width: 100%;
+              }
+              
+              .main-content{
+                border: 10px solid black;
+                  grid-area: footer_section;
+                  display: flex;
+              }
+              
+              .main-content .box{
+                  flex-basis: 50%;
+                  padding: 10px 20px;
+              }
+              
+              .box h2{
+                  color: #ffffff;
+                  font-size: 1.125rem;
+                  font-weight: 600;
+                  text-transform: uppercase;
+              }
+              
+              .box .content{
+                  color: #ffffff;
+                  margin: 20px 0 0 0;
+                  font-size: large;
+              }
+              
+              .left .content p{
+                  color: #ffffff;
+                  text-align: justify;
+              }
+              
+              .left .content .social{
+                  color: #ffffff;
+                  margin: 20px 0 0 0;
+              }
+              
+              .left .content .social a{
+                  color: #ffffff;
+                  margin: 20px 0 0 0 ;
+              }
+              
+              .left .content .social a span{
+                  height: 40px;
+                  width: 40px;
+                  background: #0775a3;
+                  line-height: 40px;
+                  text-align: center;
+                  font-size: 18px;
+                  border-radius: 5px;
+                  transition: 0.3s;
+              
+              }
+              
+              .left .content .social a span:hover{
+                  background: #3f0eb8;
+              } 
+
+          .fit {
+          height: 15vh;
+            width: 100%;
+                    }
+          nav{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-left: 60%;
+            padding-left: 10%;
+            padding-right: 10%;
+            backdrop-filter: blur(5px);
+          }
+          .logo{
+            color: aliceblue;
+            font-size: 30px;
+          }
+          nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+          }
+
+          nav ul li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .header ul li a:hover{
+            color: brown;
+            transition: .3s;
+          }
+          .neonText {
+              color: #fff;
+              text-shadow:
+                  0 0 7px #fff,
+                  0 0 10px #fff,
+                  0 0 21px #fff,
+                  0 0 42px #5271ff,
+                  0 0 82px #5271ff,
+                  0 0 92px #5271ff,
+                  0 0 102px #5271ff,
+                  0 0 151px #5271ff;
+            }
+            
+            h1 {
+              text-align: center;
+              font-weight: 400;
+            }
+              
+            h1 {
+                font-size: 5.2rem;
+                animation: pulsate 0.11s ease-in-out infinite alternate;     
+            }
+            
+            @keyframes pulsate {
+                
+              100% {
+            
+                  text-shadow:
+                  0 0 4px #fff,
+                  0 0 11px #fff,
+                  0 0 19px #fff,
+                  0 0 40px #5271ff,
+                  0 0 80px #5271ff,
+                  0 0 90px #5271ff,
+                  0 0 100px #5271ff,
+                  0 0 150px #5271ff;
+              
+              }
+  
+              0% {
+            
+                text-shadow:
+                0 0 4px #fff,
+                0 0 10px #fff,
+                0 0 18px #fff,
+                0 0 38px #5271ff,
+                0 0 73px #5271ff,
+                0 0 80px #5271ff,
+                0 0 94px #5271ff,
+                0 0 140px #5271ff;
+            
+            }
+            }
+            #text {
+                padding: 20px 20px;
+                display: inline-block;
+                color: #510080;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 3em;
+                overflow: hidden;
+                font-family: 'Times New Roman', Times, serif;
+            }
+         
+            /*creating animation effect*/
+            #text:hover {
+                color: #111;
+                background: #14d8ff;
+                box-shadow: 0 0 50px #14d8ff;
+            }
+
+            .header {
+            z-index: 1;
+            background-image: linear-gradient(75deg ,#b245e9,#0061df);
+            background-size: 400% 400%;
+            overflow: hidden;
+            width: 100%;
+            animation: animate 15s ease infinite;
+          }
+
+          @keyframes animate {
+            0%{
+              background-position: 0 50%;
+            }
+            50%{
+              background-position: 100% 50%;
+            }
+            100%{
+              background-position: 0 50%;
+            }
+          }
+          :root {
+            /* Base font size */
+            font-size: 10px;   
+            
+            /* Set neon color */
+            --neon-text-color: #f40;
+            --neon-border-color: #08f;
+          }
+
+        th  {
+              font-size: 15px;
+              font-style: italic;
+              color: #fff;
+              padding: 2rem 4rem 3.5rem;
+              border: 0.4rem solid #fff;
+              border-radius: 1.5rem;
+              text-transform: uppercase;
+              animation: flicker 1.5s infinite alternate;     
+            }
+            
+            th::-moz-selection {
+              background-color: var(--neon-border-color);
+              color: var(--neon-text-color);
+            }
+            
+            th::selection {
+              background-color: var(--neon-border-color);
+              color: var(--neon-text-color);
+            }
+            
+            th:focus {
+              outline: none;
+            }
+            
+            /* Animate neon flicker */
+            @keyframes flicker {
+                
+                0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                  
+                    text-shadow:
+                        -0.2rem -0.2rem 1rem #fff,
+                        0.2rem 0.2rem 1rem #fff,
+                        0 0 2rem var(--neon-text-color),
+                        0 0 4rem var(--neon-text-color),
+                        0 0 6rem var(--neon-text-color),
+                        0 0 8rem var(--neon-text-color),
+                        0 0 10rem var(--neon-text-color);
+                    
+                    box-shadow:
+                        0 0 .5rem #fff,
+                        inset 0 0 .5rem #fff,
+                        0 0 2rem var(--neon-border-color),
+                        inset 0 0 2rem var(--neon-border-color),
+                        0 0 4rem var(--neon-border-color),
+                        inset 0 0 4rem var(--neon-border-color);        
+                }
+                  
+                  20%, 24%, 55% {        
+                      text-shadow: none;
+                      box-shadow: none;
+                  }    
+              }
+
+              .container {
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+      }
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        transition: .7s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      .container:hover .overlay {
+        opacity: 1;
+      }
+          
+        </style>
+    </head>
+
+    <body>
+      <div class="header">
+      <div class="fit">
+        <nav>
+          <h2 class="logo">Force <span style="color: brown;">Fitness</span></h2>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">plans</a></li>
+            <li><a href="#">exercise</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">login/sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+        <center><h1 class="neonText"> An Effective diet For All The Ladies Over 40 to 60 years </h1></center>
+
+        <p>Although we are all different, there is one thing that many women have in common, 
+            that is the fear of changes that come with aging. Obviously, everyone wants to age gracefully, 
+            that is, except for those who dream of being forever young. The sad truth is, aging is irreversible
+             and inevitable, and there is nothing you can do about it. But you can fight certain side-effects 
+             of growing older, such as weight gain. If you wonder: “What is the best way to lose weight for 
+             women?” or “What is the best diet for a 40-year-old woman?”, then this article is exactly what you 
+             need. Read on to find out what is the best diet for a 40-year-old woman, and how to get the most out of your weight loss.</p>
+
+        <h2 id="text">Food schedule is must at your Age.</h2>
+
+        <p>You may already know that there are numerous diets that claim to be able to help you lose weight.
+             To choose the most effective diet for a 40-year-old woman, you need to understand what contributed 
+             to your weight gain. Here are the main factors that affect your weight management after 40:</p>
+
+             <p><span class="dot">&#9679</span><b> Hormonal changes.</b> Although 40 seems like too early for menopause,
+                 it is right around the corner. Women aged 45 and older, who go through menopause, 
+                 experience a significant decrease in estrogen, which promotes weight gain.<br><br>
+             <span class="dot">&#9679</span><b>Muscle loss.</b>  Age-related muscle loss makes the body burn fewer calories than it used to,
+              which slows down your metabolism and makes it harder to slim down and easier to pack on pounds.<br><br>
+             <span class="dot">&#9679</span><b>Increased stress levels.</b>  Growing older brings along more responsibilities,
+              which are often a cause of stress. Increased levels of stress promote weight gain and harm your overall wellness.<br><br>
+             <span class="dot">&#9679</span><b>Poor sleep quality.</b>  Sleep is extremely important for the proper functioning of your body.
+              High levels of stress and some menopause symptoms lead to poor sleep quality, which in turn makes you put on more pounds.</p>
+              
+              <center><h1 class="neonText">Plan your meal now !!</h1></center>
+              <table>
+                <tr>
+                  <th contenteditable spellcheck="false">Meal Time</th>
+                  <th contenteditable spellcheck="false">Food Group</th>
+                  <th contenteditable spellcheck="false">Raw Amounts</th>
+                  <th contenteditable spellcheck="false">Cooked Recipe</th>
+                  <th contenteditable spellcheck="false">Servings</th>
+                </tr>
+                
+                <tr>
+                  <th rowspan="5" contenteditable spellcheck="false">breakfast</th>
+                  <td>Milk</td>
+                  <td>100ml</td>
+                  <td>tea / milk / coffee</td>
+                  <td>1/2 Cups</td>
+                </tr>
+                <tr>
+                  <td>sugar</td>
+                  <td> 15 g </td>
+                  <td>tea / milk / coffee</td>
+                  <td>2 Cups</td>
+                </tr>
+                <tr>
+                  <td> - </td>
+                  <td> - </td>
+                  <td>tea / milk / coffee</td>
+                  <td>1 Cups</td>
+                </tr>
+                <tr>
+                  <td>Cereals</td>
+                  <td>70 g </td>
+                  <td> Breakfast item </td>
+                  <td> - </td>
+                </tr>
+                <tr>
+                  <td>Pulses</td>
+                  <td> 20 g </td>
+                  <td> - </td>
+                  <td> - </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="6" contenteditable spellcheck="false">Lunch</th>
+                  <td>Cereals</td>
+                  <td>100 g</td>
+                  <td>Rice</td>
+                  <td>1 Cups</td>
+                </tr>
+                <tr>
+                  <td> - </td>
+                  <td> - </td>
+                  <td>Pulkas</td>
+                  <td>2 Nos.</td>
+                </tr>
+                <tr>
+                  <td> Vegetables </td>
+                  <td> 100 g </td>
+                  <td>Veg. Curry</td>
+                  <td>1⁄2 Cup</td>
+                </tr>
+                <tr>
+                  <td>Pulses</td>
+                  <td>20 g</td>
+                  <td> Dhal </td>
+                  <td> 1⁄2 Cup </td>
+                </tr>
+                <tr>
+                  <td> Vegetables </td>
+                  <td> 50 g </td>
+                  <td> Veg. Salad </td>
+                  <td> 7-8 Slices</td>
+                </tr>
+                <tr>
+                  <td>Milk</td>
+                  <td> 100 ml </td>
+                  <td> Curd </td>
+                  <td> 1⁄2 Cup</td>
+                </tr>
+                <tr>
+                  <th rowspan="3" contenteditable spellcheck="false">Tea</th>
+                  <td>Cereals</td>
+                  <td> 50 g </td>
+                  <td> Snack</td>
+                  <td> - </td>
+
+                </tr>
+                <tr>
+                  <td> Milk </td>
+                  <td> 50 ml </td>
+                  <td> Tea </td>
+                  <td> 1 Cup</td>
+                </tr>
+                <tr>
+                  <td>sugar</td>
+                  <td>10 g</td>
+                  <td> - </td>
+                  <td> - </td>
+                </tr>
+                <tr>
+                  <th rowspan="7" contenteditable spellcheck="false">Dinner</th>
+                  <td>Cereals</td>
+                  <td> 100 g </td>
+                  <td> Rice </td>
+                  <td> 1 Cup </td>
+                </tr>
+                <tr>
+                  <td> - </td>
+                  <td> - </td>
+                  <td>Pulkas</td>
+                  <td>2 Nos.</td>
+                </tr>
+                <tr>
+                  <td> Vegetables </td>
+                  <td> 100 g </td>
+                  <td>Veg. Curry</td>
+                  <td>1⁄2 Cup</td>
+                </tr>
+                <tr>
+                  <td>Pulses</td>
+                  <td>20 g</td>
+                  <td> Dhal </td>
+                  <td> 1⁄2 Cup </td>
+                </tr>
+                <tr>
+                  <td> Vegetables </td>
+                  <td> 50 g </td>
+                  <td> Veg.Raita</td>
+                  <td> - </td>
+                </tr>
+                <tr>
+                  <td>Milk or curd </td>
+                  <td> 50 ml </td>
+                  <td> - </td>
+                  <td> 1⁄2 Cup</td>
+                </tr>
+                <tr>
+                  <td>Fruit</td>
+                  <td> 100 g </td>
+                  <td> Seasonal </td>
+                  <td> 1 Medium</td>
+                </tr>
+              </table><br>
+            <p>1 Cup = 200 ml</p>
+            <p><b>Note : </b> For Non-Vegetarians – Substitute one pulse portion with one
+              portion of egg/meat/chicken/fish.<br>
+              Use 20 g visible fat per day.</p>
+
+            <p><b>Breakfast Items :</b>Idli – 4 Nos. / Dosa – 2 Nos./ Upma – 1 Cup /Bread
+              – 3 Slices/ Porridge – 1-1/2 Cups/ Corn flakes with milk – 1-1/2 Cups.</p>
+
+            <p><b>Snacks :</b>Poha – 1 Cup/ Toast – 2 Slices / Samosa – 2 / Sandwiches –
+              2/ Biscuits – 5</p>
+
+              <center><h3><a href="#section-1">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+              <center><h1 class="neonText">food to eat regularly :</h1></center>
+
+              <h3>1. Almonds</h3>
+                <p>Almonds are rich in amino acids and vitamin E. This is a good snack for those with cholesterol problems,
+                 as almonds help lower cholesterol and keep your arteries free from dangerous problems.</p>
+              <h3>2. Yoghurt</h3>
+                <p>Regular consumption of yoghurt helps to nourish and smoothens the skin.
+                   Yoghurt has skin softening properties like calcium, vitamin A and vitamin D. Prefer low fat yoghurt.</p>
+              <h3>3. Flaxseeds</h3>
+                <p>Flaxseeds are good for those with osteoporosis and cholesterol problem. They are rich in protein, 
+                  fiber and omega-3 fatty acids, which helps to erase fine lines on the skin and lower cholesterol level.</p>
+              <h3>4. Whole grains</h3>
+                <p>Whole grains are high in fiber and potassium. Whole grains help to battle against increasing blood pressure and prevent weight gain in your 40s.
+                  Include whole wheat bread, brown rice, oats and quinoa in your diet.
+              <h3>5. Sweet potatoes</h3>
+                <p>This is one of the healthiest foods to eat in your 40s. Sweet potatoes help to reduce the effect of secondhand smoke, prevent diabetes and also promote immune health.
+                 Additionally, they are loaded with vitamin C, which helps to nourish your skin.</p>
+          
+                 <center><h3><a href="#section-2">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+            <center><h1 class="neonText">Food to avoid at your 40's :</h1></center>
+
+            <h3>1. Powdered Coffee Creamer</h3>
+
+            <p>The powdered stuff that dissolves into your cup of Joe and transforms it from dreary to creamy contains some unexpected ingredients. 
+              Sodium aluminosilicate, which is added to the creamer as an anti-caking agent, is also found in detergent and has been found to cause skin, 
+              eye, and respiratory irritations. Not only that, but Coffee Mate's Original also contains hydrogenated vegetable oil, 
+              which adds to the heart-harming saturated fat content. If you're not dairy-averse, you're better off getting healthy fats from a 
+              splash of heavy cream or even opt for nut milk.</p>
+
+            <h3>2. Soda</h3>
+
+            <p>We all know that choosing soda over H2O is a poor decision when it comes to maintaining health, but why is the classic bev so bad?
+               Studies link regular consumption of sugary drinks to heart disease, and if that's not alarming enough: One longitudinal 
+               study followed 80,000 women over the course of 22 years and found that those who consumed a can a day of sugary drink 
+               (such as Coke or Pepsi) had a 75% higher risk of developing gout than women who rarely imbibed.</p>
+
+            <h3>3. Butter</h3>
+
+            <p>As you age, your risk for heart diseases increases. And while spreading a teaspoon of salted butter on whole-grain toast 
+              every once in a blue isn't detrimental to your health, loading your chicken recipes with butter and buttering your pans on the daily can. 
+              Butter contains seven grams of saturated fat per tablespoon, and using just two spoonfuls can put you over your daily limit of the fat.</p>
+
+            <h3>4. Non-Enriched Nut Milk</h3>
+
+            <p>As we age, our risk for osteoporosis increases, giving you all the more reason to dig into calcium-rich foods.
+               A great source of the bone-strengthening nutrient is milk and if you opt for the almond variety over dairy, you may be gypping yourself 
+               of real milk's benefits. Just one glass of 2% milk contains about 30% of your daily value of calcium. If you're avoiding dairy, 
+               opt for a nut-based milk that's enriched such as Silk Almond & Cashew Protein Nutmilk.</p>
+
+            <h3>5. The frozen Dinner</h3>
+
+            <p>The freezer aisle is stocked with appetizing frozen dinners that make busy weeknight suppers a breeze, but these convenient and inexpensive
+               foods may cost you your health in the long run. Many of these meals are jam-packed with sodium and preservatives and 
+               are void of sufficient fiber, which will help keep you full and less prone to midnight munchies. so always heat food before eating.</p>
+
+               <center><h3><a href="#section-3">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+            <center><h1 class="neonText">Benefits of maintaining diet in 40's is :</h1></center>
+
+            <p>Now you’re older, you may find it difficult to get out to buy groceries, or you may feel like your appetite has reduced or disappeared.
+              Health issues may also make it difficult to eat or enjoy foods.<br><br>
+   
+             If you can, try to see every meal and snack as a chance to give your body maximum nutrition (like vitamins, minerals and fibre)
+              – and as a social activity you can enjoy with others if possible.<br><br>
+             
+             Ask for help with shopping or meal preparation, if you need it, from family and friends, community groups, carers, or your doctor.</p>
+   
+             <h2 id="text">Healthy bones and teeth</h2>
+   
+             <p>If you’re on bed rest or not exercising much, you may experience muscle loss,
+                which can increase your risk of falls and broken bones. Protein is essential for building,
+                 repairing, and maintaining healthy bones and muscles.<br><br>
+   
+               Excellent sources of protein include all meats, fish, eggs, and seafood; all types of dairy (watch cream and butter intake); 
+               and soy products like tofu and soy beverages. Other good sources include beans and pulses, such as baked beans,
+                all nuts and seeds, and wholegrains.<br><br>
+               
+               Try to spread your protein intake across the day so your body has the chance to use it while you’re busy, 
+               rather than saving it all until your evening meal when the body doesn’t need it as much. If you’re not very hungry, 
+               try to eat the protein part of your meal first.</p>
+   
+               <p>Vitamin D is also essential for healthy bones. The best source is the sun, but you only need a short time in the 
+                 sunshine each day to get the amount of vitamin D you need. Aim for 10 to 30 minutes if you live in Australia, 
+                 but check on healthy amounts for you in your area.<br><br>
+   
+                 If you’ve been advised by your doctor to stay out of the sun, you can also get vitamin D from egg yolk, butter,
+                  table margarine, whole milk, yoghurt, cheese, malted milk, tuna, sardines and pilchards or a supplement.
+                   Talk to your doctor about your needs.<br><br>
+                 
+                 Weight-bearing exercise, such as walking or light weights, is also important for bone health.</p>
+
+                 <center><h2 id="text">Images for plan your diet!</h2>
+
+                  <p id="section-1"> Keep your cursor on the image and it will show u the details. </p></center>
+    
+                  <table>
+    
+                   <th>
+                      <div class="container">
+                        <img src="../.images/Tea.jpg" alt="travel" class="image" style="width: 100%">
+                        <div class="overlay">Tea</div>
+                      </div>
+                   </th>
+    
+                   <th>
+                    <div class="container">
+                      <img src="../.images/coffee.jpg" alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">coffee</div>
+                    </div>
+                 </th>
+    
+                 <th>
+                  <div class="container">
+                    <img src="../.images/milk.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">Milk</div>
+                  </div>
+               </th>
+
+               <th>
+                <div class="container">
+                  <img src="../.images/Cereals.jpg"  alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Cereals</div>
+                </div>
+                  </th>
+                </table>
+                 
+                  <table>
+    
+                   <th>
+                      <div class="container">
+                        <img src="../.images/pulses.jpg" alt="travel" class="image" style="width: 100%">
+                        <div class="overlay">Pulses</div>
+                      </div>
+                   </th>
+    
+                   <th>
+                    <div class="container">
+                      <img src="../.images/phulkas.jpg" alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Phulkas</div>
+                    </div>
+                   </th>
+      
+                   <th>
+                    <div class="container">
+                      <img src="../.images/rice.jpg" alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Rice</div>
+                    </div>
+                 </th>
+  
+                 <th>
+                  <div class="container">
+                    <img src="../.images/veg curry.jpg"  alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">Veg Curry</div>
+                  </div>
+                    </th>
+                  </table>
+
+                    <table>
+      
+                     <th>
+                        <div class="container">
+                          <img src="../.images/North-Indian-Homestyle-Toor-Dal-2-3.jpg" alt="travel" class="image" style="width: 190px ; height: 200px;">
+                          <div class="overlay">Dhal</div>
+                        </div>
+                     </th>
+      
+                     <th>
+                      <div class="container">
+                        <img src="../.images/green.jpg" alt="travel" class="image" style="width: 180px ; height: 200px;">
+                        <div class="overlay">Salad</div>
+                      </div>
+                   </th>
+      
+                     <th>
+                      <div class="container">
+                        <img src="../.images/youghurttur.jpg" alt="travel" class="image" style="width: 180px ; height: 200px;">
+                        <div class="overlay">Curd</div>
+                      </div>
+                   </th>
+    
+                   <th>
+                    <div class="container">
+                      <img src="../.images/veg raita.jpg"  alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Veg Raita</div>
+                    </div>
+                      </th>
+                    </table>
+
+                    <table>
+      
+                      <th>
+                         <div class="container">
+                           <img src="../.images/vegetables.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Vegetables</div>
+                         </div>
+                      </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/boiledegg.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Eggs</div>
+                       </div>
+                    </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/chickenleg.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Chicken</div>
+                       </div>
+                    </th>
+     
+                    <th>
+                     <div class="container">
+                       <img src="../.images/meat.jpg"  alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Meat</div>
+                     </div>
+                       </th>
+                     </table>
+
+                     <table>
+      
+                      <th>
+                         <div class="container">
+                           <img src="../.images/cooked fish.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Fish</div>
+                         </div>
+                      </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/idli.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Idli</div>
+                       </div>
+                    </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/dosa.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Dosa</div>
+                       </div>
+                    </th>
+     
+                    <th>
+                     <div class="container">
+                       <img src="../.images/upma.jpg"  alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Upma</div>
+                     </div>
+                       </th>
+                     </table>
+
+                     <table>
+      
+                      <th>
+                         <div class="container">
+                           <img src="../.images/bread.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Bread</div>
+                         </div>
+                      </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/porridge.jpg" alt="travel" class="image" style="width: 100%">
+                        <div class="overlay">Porridge</div>
+                       </div>
+                    </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/cornflake.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">cornflake with milk</div>
+                       </div>
+                    </th>
+     
+                    <th>
+                     <div class="container">
+                       <img src="../.images/poha.jpg"  alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Poha</div>
+                     </div>
+                       </th>
+                     </table>
+
+                     <table>
+      
+                      <th>
+                         <div class="container">
+                           <img src="../.images/toast.jpg" alt="travel" class="image" style="width: 100%">
+                           <div class="overlay">Toast</div>
+                         </div>
+                      </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/sanwiches.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Sandwiches</div>
+                       </div>
+                    </th>
+       
+                      <th>
+                       <div class="container">
+                         <img src="../.images/samosa.jpg" alt="travel" class="image" style="width: 100%">
+                         <div class="overlay">Samosa</div>
+                       </div>
+                    </th>
+     
+                    <th>
+                     <div class="container">
+                       <img src="../.images/Biscuits.jpg"  alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Biscuits</div>
+                     </div>
+                       </th>
+                     </table>
+
+                     <center><h2 id="text">Images for right food to take:</h2></center>
+      
+                 <center><p id="section-2"> keep cursor on the image for details. </p></center>
+
+                 <table>
+      
+                  <th>
+                     <div class="container">
+                       <img src="../.images/almond.jpg" alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Almonds</div>
+                     </div>
+                  </th>
+   
+                  <th>
+                   <div class="container">
+                     <img src="../.images/youghurttur.jpg" alt="travel" class="image" style="width: 100%">
+                     <div class="overlay">Youghurt</div>
+                   </div>
+                </th>
+   
+                  <th>
+                   <div class="container">
+                     <img src="../.images/Flax seeds.jpg" alt="travel" class="image" style="width: 100%">
+                     <div class="overlay">Flax seeds</div>
+                   </div>
+                </th>
+ 
+                <th>
+                 <div class="container">
+                   <img src="../.images/wholegrains.webp"  alt="travel" class="image" style="width: 100%">
+                   <div class="overlay">whole-grains</div>
+                 </div>
+                   </th>
+
+                   <th>
+                    <div class="container">
+                      <img src="../.images/sweet potato.jpg"  alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Sweet potatoes</div>
+                    </div>
+                      </th>
+                 </table>
+
+                 <center><h2 id="text">Images to avoid eating unhealthy food</h2></center>
+     
+            <center><p id="section-3">Keep the cursor on the image to know more details.</p></center>
+
+                 <table>
+      
+                  <th>
+                     <div class="container">
+                       <img src="../.images/powered coffee creamer.jpg" alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Powdered coffee creamer</div>
+                     </div>
+                  </th>
+   
+                  <th>
+                   <div class="container">
+                     <img src="../.images/soda.jpg" alt="travel" class="image" style="width: 100%">
+                     <div class="overlay">Soda</div>
+                   </div>
+                </th>
+   
+                  <th>
+                   <div class="container">
+                     <img src="../.images/butter.jpg" alt="travel" class="image" style="width: 100%">
+                     <div class="overlay">Butter</div>
+                   </div>
+                </th>
+ 
+                <th>
+                 <div class="container">
+                   <img src="../.images/non enriched nut milk.jpg"  alt="travel" class="image" style="width: 100%">
+                   <div class="overlay">Non enriched nut milk</div>
+                 </div>
+                   </th>
+
+                   <th>
+                    <div class="container">
+                      <img src="../.images/Frozen dinner.jpg"  alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Frozen dinner</div>
+                    </div>
+                      </th>
+                 </table>
+  
+                 <footer>
+                  <div class="main-content">
+                    <div class="left box">
+                      <h3>About us</h3>
+                      <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo praesentium assumenda sequi corporis, 
+                          est similique ipsa rem tempore aspernatur perspiciatis, provident accusantium eum laborum iure veritatis vero distinctio esse?</p>
+                        <div class="social">
+                          <a href="#"><span class="fab fa-facebook-f"></span></a>
+                          <a href="#"><span class="fab fa-twitter"></span></a>
+                          <a href="#"><span class="fab fa-instagram"></span></a>
+                          <a href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="center box">
+                      <h3>Address</h3>
+                      <div class="content">
+                        <div class="place">
+                          <span class="fa fa-map-marker"></span>
+                          <span class="text">Mathura,Vrindavan</span>                                     
+                        </div>
+                        <div class="phone">
+                          <span class="fa fa-phone"></span>
+                          <span class="text">91+ 7894561230</span>
+                        </div>
+                        <div class="email">
+                          <span class = "fa fa-envelope"></span>
+                          <span class = "text">abc@example.com</span>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="right box">
+                      <h3>Contact us</h3>
+                      <div class="content">
+                        <form action="#">
+                          <div class="email">
+                          <div class="text">Email *</div>
+                          <input type="email" required>
+                          </div>
+                          <div class="msg">
+                            <div class="text">Message *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                          </div>
+                          <div class="btn">
+                            <button type="submit">Send</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+    </body>
+</html>

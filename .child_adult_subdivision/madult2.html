@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="./FontAwesome files/fontawesome.js"></script>
+        <link rel ="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+        
+        <style>
+            body{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box ;
+                  font-family: 'Poppins',sans-serif;
+              
+              }
+            p {color: rgb(255, 255, 255);
+            font-family: sans-serif;
+          font-size: 19px;}
+           h2 {font-size: 40px;
+            color: rgb(0, 34, 157);}
+            h3 {font-size: 25px;
+            color: rgb(17, 29, 29);
+          font-family: 'Times New Roman', Times, serif;}
+          .dot {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(207, 31, 31);
+            border-radius: 50%;
+            display: inline-block;
+          }
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 17px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+          a
+          {
+              position: relative;
+              padding: 5px 20px ;
+              display: inline-block;
+              margin-top: 20px;
+              text-decoration: none;
+              color: #fff;
+              background: #111;
+          }
+              footer
+              {
+               bottom: 12px;
+               width: 100%;
+              }
+              
+              .main-content{
+                border: 10px solid black;
+                  grid-area: footer_section;
+                  display: flex;
+              }
+              
+              .main-content .box{
+                  flex-basis: 50%;
+                  padding: 10px 20px;
+              }
+              
+              .box h2{
+                  color: #ffffff;
+                  font-size: 1.125rem;
+                  font-weight: 600;
+                  text-transform: uppercase;
+              }
+              
+              .box .content{
+                  color: #ffffff;
+                  margin: 20px 0 0 0;
+                  font-size: large;
+              }
+              
+              .left .content p{
+                  color: #ffffff;
+                  text-align: justify;
+              }
+              
+              .left .content .social{
+                  color: #ffffff;
+                  margin: 20px 0 0 0;
+              }
+              
+              .left .content .social a{
+                  color: #ffffff;
+                  margin: 20px 0 0 0 ;
+              }
+              
+              .left .content .social a span{
+                  height: 40px;
+                  width: 40px;
+                  background: #0775a3;
+                  line-height: 40px;
+                  text-align: center;
+                  font-size: 18px;
+                  border-radius: 5px;
+                  transition: 0.3s;
+              
+              }
+              
+              .left .content .social a span:hover{
+                  background: #3f0eb8;
+              } 
+
+        .fit {
+          height: 15vh;
+            width: 100%;
+                    }
+          nav{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-left: 60%;
+            padding-left: 10%;
+            padding-right: 10%;
+            backdrop-filter: blur(5px);
+          }
+          .logo{
+            color: aliceblue;
+            font-size: 30px;
+          }
+          nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+          }
+
+          nav ul li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .header ul li a:hover{
+            color: brown;
+            transition: .3s;
+          }
+          h1 {
+                font-size: calc(15px + 6vh);
+                line-height: calc(15px + 9vh);
+              /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                  0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+                color: #fccaff; */
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                  color: #fff6a9;
+                font-family: "Sacramento", cursive;
+                text-align: center;
+                animation: blink 12s infinite;
+                -webkit-animation: blink 12s infinite;
+              }
+              
+              @-webkit-keyframes blink {
+                20%,
+                24%,
+                55% {
+                  color: #111;
+                  text-shadow: none;
+                }
+              
+                0%,
+                19%,
+                21%,
+                23%,
+                25%,
+                54%,
+                56%,
+                100% {
+              /*     color: #fccaff;
+                  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                  color: #fff6a9;
+                }
+              }
+              
+              @keyframes blink {
+                20%,
+                24%,
+                55% {
+                  color: #111;
+                  text-shadow: none;
+                }
+              
+                0%,
+                19%,
+                21%,
+                23%,
+                25%,
+                54%,
+                56%,
+                100% {
+              /*     color: #fccaff;
+                  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                  color: #fff6a9;
+                }
+              }
+
+              #text {
+                padding: 20px 20px;
+                display: inline-block;
+                color: #46008d;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 3em;
+                overflow: hidden;
+                font-family: 'Times New Roman', Times, serif;
+            }
+              
+         
+            /*creating animation effect*/
+            #text:hover {
+                color: #111;
+                background: #14d8ff;
+                box-shadow: 0 0 50px #14d8ff;
+            }
+
+            .header {
+            z-index: 1;
+            background-image: linear-gradient(75deg ,#4568dc,#b06ab3);
+            background-size: 400% 400%;
+            overflow: hidden;
+            width: 100%;
+            animation: animate 15s ease infinite;
+          }
+
+          @keyframes animate {
+            0%{
+              background-position: 0 50%;
+            }
+            50%{
+              background-position: 100% 50%;
+            }
+            100%{
+              background-position: 0 50%;
+            }
+          }
+          :root {
+            /* Base font size */
+            font-size: 10px;   
+            
+            /* Set neon color */
+            --neon-text-color: #f40;
+            --neon-border-color: #08f;
+          }
+
+        th  {
+              font-size: 15px;
+              font-style: italic;
+              color: #fff;
+              padding: 2rem 4rem 3.5rem;
+              border: 0.4rem solid #fff;
+              border-radius: 1.5rem;
+              text-transform: uppercase;
+              animation: flicker 1.5s infinite alternate;     
+            }
+            
+            th::-moz-selection {
+              background-color: var(--neon-border-color);
+              color: var(--neon-text-color);
+            }
+            
+            th::selection {
+              background-color: var(--neon-border-color);
+              color: var(--neon-text-color);
+            }
+            
+            th:focus {
+              outline: none;
+            }
+            
+            /* Animate neon flicker */
+            @keyframes flicker {
+                
+                0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                  
+                    text-shadow:
+                        -0.2rem -0.2rem 1rem #fff,
+                        0.2rem 0.2rem 1rem #fff,
+                        0 0 2rem var(--neon-text-color),
+                        0 0 4rem var(--neon-text-color),
+                        0 0 6rem var(--neon-text-color),
+                        0 0 8rem var(--neon-text-color),
+                        0 0 10rem var(--neon-text-color);
+                    
+                    box-shadow:
+                        0 0 .5rem #fff,
+                        inset 0 0 .5rem #fff,
+                        0 0 2rem var(--neon-border-color),
+                        inset 0 0 2rem var(--neon-border-color),
+                        0 0 4rem var(--neon-border-color),
+                        inset 0 0 4rem var(--neon-border-color);        
+                }
+                  
+                  20%, 24%, 55% {        
+                      text-shadow: none;
+                      box-shadow: none;
+                  }
+                }	
+
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+      }
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        transition: .7s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      .container:hover .overlay {
+        opacity: 1;
+      }
+          
+        </style>
+    </head>
+    <body>
+      <div class="header">
+        <div class="fit">
+          <nav>
+            <h2 class="logo">Force <span style="color: brown;">Fitness</span></h2>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">plans</a></li>
+              <li><a href="#">exercise</a></li>
+              <li><a href="#">Diet</a></li>
+              <li><a href="#">login/sign up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <center><h1>Men's nutrition - 60 to 80 years</h1></center>
+
+        <p>By this age, your nutritional needs have changed from when you were younger.
+             As men get older, the key is choosing foods that give you bang for your buck – that is, 
+             foods that are nutrient-rich, without excessive kilojoules.<br><br>
+
+            You need slightly less of some food groups, such as lean meats and eggs, tofu, nuts and seeds.<br><br>
+            
+            You’ll also need to watch your ‘extras’ or ‘sometimes foods’ – commercial burgers, pizza, alcohol,
+             lollies, cakes and biscuits, fried foods, and fruit juices and cordials – for weight management.avoid using such foods.</p>
+             
+             <center>
+             <img src="../.images/madultold.jpg"  alt="phto"></center>
+
+             <center><h1> Plan your diet now !!</h1></center>
+
+             <table>
+              <tr>
+                <th>   </th>
+                <th> Monday </th>
+                <th> Tuesday </th>
+                <th> Wednesday</th>
+                <th> Thursday</th>
+                <th> friday</th>
+                <th> Saturday</th>
+                <th> Sunday</th>
+              </tr>
+
+              <tr>
+                <th>Breakfast</th>
+                <td>2 eggs scrambled + in 1 tbsp butter + 1/2 cup black berries</td>
+                <td>1 cup steel-cut oatmeal with 1/4 cup milk and 2 tbsp dried fruit and nuts </td>
+                <td>1/2 cup plain youghurt + 1/2 cup strawberries</td>
+                <td>1 slice whole grain bread with 1 tbsp peanut butter and 1 sliced banana</td>
+                <td>1 slice whole wheat toast + 1/2 cup blackberries</td>
+                <td>Smoothie made with 1 cup plain Greek yougurt , 1 cup berries and 1 tbsp honey.</td>
+                <td>1 egg with 1/2 cup diced vegetables + 2 pieces whole grain lavash.</td>
+              </tr>
+
+              <tr>
+                <th> Snack </th>
+                <td> 1 slice of cheeze + 4 whole grains toast</td>
+                <td>1/2 cup edamame in pods</td>
+                <td>1/4 cup fruit and nuts</td>
+                <td>1 cooked or boiled egg + 4 whole grain toast </td>
+                <td>1 cup vegetables + 1/4 cup salad</td>
+                <td>1/4 cup died fruit and nuts</td>
+                <td>1/2 cup roasted peas</td>
+              </tr>
+
+              <tr>
+                <th>Lunch</th>
+                <td>1 cup butter milk + 1/2 cup vegetables + chapaties + 1/4 cup toasted almonds</td>
+                <td>2 cups kale salad with 1 tbsp olive oil and balsamic vinegar + 1/2 cup beans  + 1/4 cup toasted peas</td>
+                <td>2 slices whole grain bread with 2 tbsp peanut butter and 1 sliced banana + 2 cups green salad with 1 tbsp olive oil
+                </td>
+                <td>2 cups drak green salad with 1 tbsp olive oil and lemon grassing + 1/3 cup peas</td>
+                <td>2 cups cooked green leaf vegetables + rice and daal</td>
+                <td>1 large whole wheat chapati + 1/2 cups of grilled vegetables chawal</td>
+                <td>1 cup white bean saland with 1 tbsp olive oil + 1 cup cooked vegetables</td>
+              </tr>
+
+              <tr>
+                <th>Snack</th>
+                <td>5-8 small date </td>
+                <td> 1 apple + some juice of any fruit which you like</td>
+                <td>1/2 cup plain yougurt + 1/2 cup dried fruit and nut</td>
+                <td>1/4 cup dried fruit  nuts</td>
+                <td>1 cup microwave popcorn or tea /milk or coffee</td>
+                <td>2 fruits + 1/2 cup youghurt</td>
+                <td>2-3 toast + tea/coffee/milk</td>
+              </tr>
+
+              <tr>
+                <th>Dinner</th>
+                <td>3 pieces chicken + 2 cups green salad + 2 whole grain chapati</td>
+                <td>3 sweet Boiled potatoes  + 2 tbsp of youghurt</td>
+                <td>3 pieces of fish + 1/2 cup cooked rice + salad</td>
+                <td>3 cup of cooked mixed vegetables + 1/2 cup whole wheat chapati + sweets which u may prefer</td>
+                <td>1 cup of mashed potatoes with 1 tbsp of olive oil +  2 cups of green salad + whole wheat grain</td>
+                <td>3 grilled tofu + 2 cups fried potatoes + 2 cups green salad + 1 cup Butter milk </td>
+                <td> 1 cup cooked rice with 1 cup of daal and 1/4 cup cooked tomato and mashing it with corriender.</td>
+              </tr>
+
+
+             </table>
+
+             <center><h3><a href="#section-1">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+
+        <center><h1>Be Healthier by intaking good food !!!</h1></center>
+
+        <p>In particular, men aged 60 and above need to adjust their diets and prefer the following list for good and healthy <br><br>
+
+          <center><p> <span>&#183</span>B vitamins.<br>
+            <span>&#183</span>Calcium.<br>
+            <span>&#183</span>Fiber.<br>
+            <span>&#183</span>Fluids.<br>
+            <span>&#183</span>Vitamin D.</p></center>
+
+        <h2 id="text">1. B vitamins</h2>
+
+        <p>A lack of B vitamins can lead to serious health consequences for aging adults, such as anemia and nerve problems. B vitamins include B6, B12 and folate (folic acid).<br><br>
+
+            “Although you may not notice any symptoms at first, a vitamin B12 deficiency can cause nerve problems and anemia if not treated.
+             Vitamin B6 is needed to keep your nerves functioning properly.”<br>
+            
+             Foods high in B vitamins include:<br><br>
+
+             <span>&#183</span>Chicken.<br>
+             <span>&#183</span>Eggs.<br>
+             <span>&#183</span>Leafy greens (such as collard greens, spinach and turnip greens).<br>
+             <span>&#183</span>Legumes.<br>
+      
+             Folate keeps your cells healthy, helps in the production of new red blood cells, and,
+              research suggests, aids in the prevention of cancer. Folate also helps keep your heart and circulation healthy.</p>
+
+        <h2 id="text">2. Calcium</h2>
+
+        <p>Men aged 50 and above need more calcium and vitamin D than younger adults to help maintain healthy bones. 
+            Calcium works with vitamin D to keep bones strong. “Calcium is also a mineral that is also important for strong teeth,” Nasrallah says.<br>
+
+            Foods high in calcium include:<br><br>
+            
+            <span>&#183</span>Almonds.<br>
+            <span>&#183</span>Beans.<br>
+            <span>&#183</span>Calcium-fortified foods (breads, cereals and tortillas).<br>
+            <span>&#183</span>Cheese.<br>
+            <span>&#183</span>Leafy greens.<br>
+            <span>&#183</span>Yogurt.</p>
+
+        <h2 id="text">3. Fiber</h2>
+
+        <p>Fiber and adequate fluid intake help individuals of all ages maintain normal bowel function.<br><br>
+
+            Good sources of fiber include:<br><br>
+            
+            <span>&#183</span>Fruits.<br>
+            <span>&#183</span>Legumes.<br>
+            <span>&#183</span>Nuts.<br>
+            <span>&#183</span>Whole grains.<br>
+            <span>&#183</span>Vegetables.</p>
+
+        <h2 id="text">4. Fluids</h2>
+
+        <p>With age, some people may lose the ability to regulate fluid levels. “This means you might not feel thirsty,
+             even when your body needs more fluids,” Nasrallah says. “This may put you at risk of being dehydrated.”<br><br>
+
+            Dehydration can lead to:<br><br>
+            
+            <span>&#183</span>Confusion.<br>
+            <span>&#183</span>Constipation.<br>
+            <span>&#183</span>Dry gums.<br>
+            <span>&#183</span>Low-grade fever.<br>
+            <span>&#183</span>Reduced output of urine.<br><br>
+
+            The amount of water individuals should consume daily depends on their size and the weather conditions where they live.
+             People in hotter climates will need to drink more. The National Academies of Sciences,
+             Engineering and Medicine recommends that women should consume about 91 ounces of water each day, from beverages and foods, 
+             while men should drink about 125 ounces from all sources.</p>
+
+            <h2 id="text">5. Vitamin D</h2>
+
+            <p>Men age 50 and above need not just more calcium, but also more vitamin D than younger adults to maintain healthy bones.
+                 Vitamin D works with calcium to keep bones strong, Nasrallah says.<br><br>
+
+                Good sources of vitamin D include:<br><br>
+                
+                <span>&#183</span>Dark green leafy vegetables.<br>
+                <span>&#183</span>Calcium-fortified foods (cereals, some milk products and soy products).<br></p>
+
+                <center><h3><a href="#section-2">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+            <center><h1>avoid taking such food :</h1></center>
+
+            <p> For seniors who want to stay healthy and cut down on the likelihood of food-borne illnesses, it’s generally best to avoid the following foods:</p>
+
+            <h2 id="text">1. Sodas and sugary drinks.</h2>
+
+            <p>An ice-cold cola may seem tempting if you’re hot and thirsty, but sodas and many sports drinks contain a large amount of sugar.
+               A cola can contain 39 grams of sugar in one 12-ounce serving, the equivalent of almost 10 teaspoons of sugar! If you have prediabetes, 
+               regular consumption of these types of drinks may raise your blood sugar to a diagnosis of diabetes. Excess sugar also leads to obesity and other health issues.</p>
+      
+              <h2 id="text">2. Soft cheeses</h2>
+              <p>Soft cheeses like Brie, chevre, Camembert, and blue cheese are generally unpasteurized and, as such, they can allow bacteria to breed in large amounts.
+               While these soft cheese varieties may not be as much of an illness threat for younger people, they can harm seniors with a compromised immune system
+                or a delicate stomach. It is important to note, however, that cheese offers a good dietary source of Vitamin D and seniors can get all the health 
+                benefits of cheese by eating varieties like cheddar, Monterey jack, and Swiss rather than soft varieties.</p>
+              
+              <h2 id="text">3. Raw meat</h2>
+              <p>Some raw meat dishes, like steak tartare, are considered delicacies,
+                 but seniors should generally avoid them. The reason for this is that these foods are uncooked, which means that any bacteria present 
+                 in the meat has not been killed by heat. This can make seniors very ill and can lead to the development of secondary conditions. 
+                 Instead of eating raw meat, seniors should opt to consume lean white meat like chicken and regular portions of high-quality, 
+                 cooked seafood to support optimal brain function and healthy joints.</p>
+              
+              <h2 id="text">4. Raw eggs</h2>
+               <p> Peoples consuming raw eggs in order to build muscle and have more energy, but raw and undercooked eggs can actually be very dangerous for seniors.
+                 This is because raw eggs present a salmonella risk and can have unfortunate health consequences for seniors.<br><br>
+              
+              In light of this, seniors shouldn’t eat raw eggs and should avoid foods like unpasteurized eggnog, French toast.</p>
+              
+              <h2 id="text">5. Unpasteurized milk</h2>
+              <p>Unpasteurized milk is often revered as a health food due to its intact mineral levels and high levels of beneficial fats, but seniors should
+                 avoid it altogether. This is because unpasteurized milk breeds and harbors bacteria in higher levels than pasteurized milk, 
+                 which is super-heated to kill dangerous bacteria and keep the milk safe for human consumption.<br><br>
+              
+              While this doesn’t mean that seniors need to steer clear of milk altogether, it does mean that they should stay with pasteurized whole-milk varieties.</p>
+
+              <center><h3><a href="#section-3">To know more about above given <br> materials click me ⬇ </a><br /></h3></center>
+
+              <center><h1>Benefit of maintaining a good diet plan :</h1></center>
+
+              <p>Eating well when you’re over 60 will help you maintain your health and independence. A good diet can also help you manage conditions 
+                such as high blood pressure, high cholesterol and type 2 diabetes.<br><br>
+
+                As you age, your nutritional requirements may change — even if you’ve been eating healthily as a younger adult. Nutritional needs can 
+                also differ between men and women.<br><br>
+                
+                After 60, you may not be as active as you were and so you need fewer kilojoules. You may also have a reduced appetite.
+                 So, you’ll need to pack more nutrients — such as vitamins, minerals, protein and fibre — into a smaller amount of food. <br><br>
+
+                 Good hydration is necessary to keep your bowels moving and brain functioning, and to prevent urinary tract infections and kidney stones.<br><br>
+
+                Older people may be more at risk of dehydration due to reduced kidney function, not feeling thirsty, and medicines such as diuretics and laxatives. 
+                Reduced mobility can make toilet trips difficult, leading people to restrict fluids, which can then cause dehydration.<br><br>
+                
+                In summer, older people who are unfit and overweight and who become dehydrated are more susceptible to heatstroke, especially after strenuous exercise.<br><br>
+                
+                Don’t wait until you feel thirsty to drink; as people age, they don’t feel thirst as much. Generally, women should drink 8 cups of 
+                fluid per day and men 10 cups. Plain water is a healthy choice, but milk, soup, tea and coffee all contribute to your daily intake of fluids.
+                </p>
+
+                <center><h2 id="text">Images for plan your diet!</h2>
+
+                  <p id="section-1"> Keep your cursor on the image and it will show u the details. </p></center>
+    
+                  <table>
+    
+                   <th>
+                      <div class="container">
+                        <img src="../.images/omlet.jpg" alt="travel" class="image" style="width: 100%">
+                        <div class="overlay">EGG omlet (scrambled egges)</div>
+                      </div>
+                   </th>
+    
+                   <th>
+                    <div class="container">
+                      <img src="../.images/butter.jpg" alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Butter</div>
+                    </div>
+                 </th>
+    
+                 <th>
+                  <div class="container">
+                    <img src="../.images/blackberry.webp" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">berries</div>
+                  </div>
+               </th>
+
+               <th>
+                <div class="container">
+                  <img src="../.images/Quaker_apples_&_cinnamon_instant_oatmeal_2.jpg"  alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">oatmeal</div>
+                </div>
+                  </th>
+                </table>
+
+                <table>
+    
+                  <th>
+                     <div class="container">
+                       <img src="../.images/milk.jpg" alt="travel" class="image" style="width: 100%">
+                       <div class="overlay">Milk</div>
+                     </div>
+                  </th>
+   
+                  <th>
+                   <div class="container">
+                     <img src="../.images/chestnut-nut-nuts-peanuts-pistachio-cashew-1296x728-header.webp" alt="travel" class="image" style="width: 100%">
+                     <div class="overlay">Dry Fruits</div>
+                   </div>
+                </th>
+   
+                <th>
+                 <div class="container">
+                   <img src="../.images/youghurttur.jpg" alt="travel" class="image" style="width: 100%">
+                   <div class="overlay">youghurt</div>
+                 </div>
+              </th>
+
+              <th>
+               <div class="container">
+                 <img src="../.images/straberries.jpg"  alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">strawberries</div>
+               </div>
+                 </th>
+               </table>
+
+               <table>
+    
+                <th>
+                   <div class="container">
+                     <img src="../.images/bread.jpg" alt="travel" class="image" style="width: 100%">
+                     <div class="overlay">Bread</div>
+                   </div>
+                </th>
+ 
+                <th>
+                 <div class="container">
+                   <img src="../.images/nutella.webp" alt="travel" class="image" style="width: 100%">
+                   <div class="overlay">Peanut Butter</div>
+                 </div>
+              </th>
+ 
+              <th>
+               <div class="container">
+                 <img src="../.images/banana.jpg" alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">Banana</div>
+               </div>
+            </th>
+
+            <th>
+             <div class="container">
+               <img src="../.images/toast.jpg"  alt="travel" class="image" style="width: 100%">
+               <div class="overlay">Toast</div>
+             </div>
+               </th>
+             </table>
+
+             <table>
+    
+              <th>
+                 <div class="container">
+                   <img src="../.images/smoothie.jpg" alt="travel" class="image" style="width: 100%">
+                   <div class="overlay">Smoothie</div>
+                 </div>
+              </th>
+
+              <th>
+               <div class="container">
+                 <img src="../.images/dicedve.jpg" alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">Diced veggies and grain lavash</div>
+               </div>
+            </th>
+
+            <th>
+             <div class="container">
+               <img src="../.images/cheese.jpg" alt="travel" class="image" style="width: 100%">
+               <div class="overlay">Cheese</div>
+             </div>
+          </th>
+
+          <th>
+           <div class="container">
+             <img src="../.images/edamame.jpg"  alt="travel" class="image" style="width: 100%">
+             <div class="overlay">edamame</div>
+           </div>
+             </th>
+           </table>
+
+           <table>
+    
+            <th>
+               <div class="container">
+                 <img src="../.images/boiledegg.jpg" alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">Boiled eggs</div>
+                  </div>
+               </th>
+   
+               <th>
+                <div class="container">
+                  <img src="../.images/cookedvegetables.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Cooked vegetables</div>
+                </div>
+             </th>
+   
+             <th>
+              <div class="container">
+                <img src="../.images/green.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Salad</div>
+              </div>
+           </th>
+   
+           <th>
+            <div class="container">
+              <img src="../.images/Roasted-Peas-FI.jpg"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Roasted peas</div>
+            </div>
+              </th>
+            </table>
+   
+            <table>
+       
+             <th>
+                <div class="container">
+                  <img src="../.images/chpati.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">chapati</div>
+                </div>
+             </th>
+   
+             <th>
+              <div class="container">
+                <img src="../.images/almond.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Roasted almond</div>
+              </div>
+           </th>
+            
+                 <th>
+                  <div class="container">
+                    <img src="../.images/butter-milk-masala.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">Butter milk</div>
+                  </div>
+               </th>
+        
+               <th>
+                <div class="container">
+                  <img src="../.images/kale salad.jpg"  alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Kale salad</div>
+                </div>
+                  </th>
+                </table>
+        
+                <table>
+             
+                 <th>
+                    <div class="container">
+                      <img src="../.images/olive oil.jpg" alt="travel" class="image" style="width: 100%">
+                      <div class="overlay">Olive oil</div>
+                    </div>
+                 </th>
+        
+                 <th>
+                  <div class="container">
+                    <img src="../.images/vnegar.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">vinegar</div>
+                  </div>
+               </th>
+        
+               <th>
+                <div class="container">
+                  <img src="../.images/beans.jpg" alt="travel" class="image" style="width:100%">
+                  <div class="overlay">Beans</div>
+                </div>
+             </th>
+        
+             <th>
+              <div class="container">
+                <img src="../.images/lemon.jpg"  alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Lemon grassing</div>
+              </div>
+                </th>
+              </table>
+   
+           <table>
+          
+            <th>
+               <div class="container">
+                 <img src="../.images/peas.webp" alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">Peas</div>
+               </div>
+            </th>
+      
+            <th>
+             <div class="container">
+               <img src="../.images/alo.jpg" alt="travel" class="image" style="width: 100%">
+               <div class="overlay">Green vegetable + rice+ daal</div>
+             </div>
+          </th>
+   
+            <th>
+             <div class="container">
+               <img src="../.images/grilledvege.jpg" alt="travel" class="image" style="width:100%">
+               <div class="overlay">Grilled vegetables rice</div>
+             </div>
+          </th>
+   
+          <th>
+           <div class="container">
+             <img src="../.images/white bean salad.jpg"  alt="travel" class="image" style="width: 100%">
+             <div class="overlay">White bean salad</div>
+           </div>
+             </th>
+           </table>
+        
+           <table>
+            
+            <th>
+               <div class="container">
+             <img src="../.images/date.jpg" alt="travel" class="image" style="width: 100%">
+             <div class="overlay">Date</div>
+           </div>
+             </th>
+         
+             <th>
+              <div class="container">
+                <img src="../.images/Apple.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Apple</div>
+              </div>
+           </th>
+   
+             <th>
+              <div class="container">
+                <img src="../.images/fruit-juices-1.jpg" alt="travel" class="image" style="width:100%">
+                <div class="overlay">Fruit juices</div>
+              </div>
+           </th>
+   
+             <th>
+              <div class="container">
+                <img src="../.images/popcorn.jpg"  alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Popcorn</div>
+              </div>
+                </th>
+              </table>
+             
+              <table>
+                 
+               <th>
+                  <div class="container">
+                    <img src="../.images/Tea.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">Tea</div>
+                  </div>
+               </th>
+             
+               <th>
+                <div class="container">
+                  <img src="../.images/milk.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Milk</div>
+                </div>
+             </th>
+             
+             <th>
+              <div class="container">
+                <img src="../.images/coffee.jpg" alt="travel" class="image" style="width:100%">
+                <div class="overlay">coffee</div>
+              </div>
+             </th>
+             
+             <th>
+             <div class="container">
+              <img src="../.images/fruits.jpg"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">fruits</div>
+             </div>
+              </th>
+             </table>
+             
+             <table>
+                 
+               <th>
+                  <div class="container">
+                    <img src="../.images/chicken thali.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">chicken + chapati + Green salad</div>
+                  </div>
+               </th>
+             
+               <th>
+                <div class="container">
+                  <img src="../.images/sweet potato.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Sweet potato</div>
+                </div>
+             </th>
+             
+             <th>
+              <div class="container">
+                <img src="../.images/cooked fish.jpg" alt="travel" class="image" style="width:100%">
+                <div class="overlay">fish + salad</div>
+              </div>
+             </th>
+             
+             <th>
+             <div class="container">
+              <img src="../.images/cookedrice.webp"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Cooked rice</div>
+             </div>
+              </th>
+             </table>
+             
+             <table>
+                 
+               <th>
+                  <div class="container">
+                    <img src="../.images/mixedvegetable.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">Mixed Vegetable</div>
+                  </div>
+               </th>
+             
+               <th>
+                <div class="container">
+                  <img src="../.images/sweets.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Sweets</div>
+                </div>
+             </th>
+             
+             <th>
+              <div class="container">
+                <img src="../.images/mashed.webp" alt="travel" class="image" style="width:100%">
+                <div class="overlay">Mashed potato</div>
+              </div>
+             </th>
+             
+             <th>
+             <div class="container">
+              <img src="../.images/grilled-tofu-steaks-featured.jpg"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Grilled Tofu</div>
+             </div>
+              </th>
+             </table>
+             
+             <table>
+                 
+               <th>
+                  <div class="container">
+                    <img src="../.images/delish-fried-potatoes-horizontal-1537915168.jpg" alt="travel" class="image" style="width: 100%">
+                    <div class="overlay">Fried potato</div>
+                  </div>
+               </th>
+             
+               <th>
+                <div class="container">
+                  <img src="../.images/North-Indian-Homestyle-Toor-Dal-2-3.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Urad daal</div>
+                </div>
+             </th>
+             
+             <th>
+              <div class="container">
+                <img src="../.images/TChoka-0168-500x375.jpg" alt="travel" class="image" style="width:100%">
+                <div class="overlay">mashed cooked tomato</div>
+              </div>
+             </th>
+             
+             <th>
+             <div class="container">
+              <img src="../.images/corriender.jpg"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Corriender</div>
+             </div>
+              </th>
+             </table>
+    
+              
+            <center><h2 id="text">Images for right food to take:</h2></center>
+            
+            <center><p id="section-2"> keep cursor on the image for details. </p></center>
+            <table>
+              <th>
+            <div class="container">
+              <img src="../.images/chickenleg.jpg"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">chicken</div>
+            </div>
+              </th>
+
+             <th>
+                <div class="container">
+                  <img src="../.images/boiledegg.jpg" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Eggs</div>
+                </div>
+             </th>
+
+             <th>
+              <div class="container">
+                <img src="../.images/spinach.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">spinach</div>
+              </div>
+           </th>
+
+           <th>
+            <div class="container">
+              <img src="../.images/legumes.jpg" alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Legumes</div>
+            </div>
+         </th>
+          </table>
+
+          <table>
+            <th>
+          <div class="container">
+            <img src="../.images/almond.jpg"  alt="travel" class="image" style="width: 100%">
+            <div class="overlay">Almonds</div>
+          </div>
+            </th>
+
+           <th>
+              <div class="container">
+                <img src="../.images/beans.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Beans</div>
+              </div>
+           </th>
+
+           <th>
+            <div class="container">
+              <img src="../.images/bread.jpg" alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Bread</div>
+            </div>
+         </th>
+
+         <th>
+          <div class="container">
+            <img src="../.images/Cereals.jpg" alt="travel" class="image" style="width: 100%">
+            <div class="overlay">Cereals</div>
+          </div>
+       </th>
+        </table>
+
+        <table>
+          <th>
+        <div class="container">
+          <img src="../.images/tortilla.jpg"  alt="travel" class="image" style="width: 100%">
+          <div class="overlay">Tortillas</div>
+        </div>
+          </th>
+
+         <th>
+            <div class="container">
+              <img src="../.images/cheese.jpg" alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Cheese</div>
+            </div>
+         </th>
+
+             <th>
+              <div class="container">
+                <img src="../.images/leafy green vegetables.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">Leafy green vegetables</div>
+              </div>
+           </th>
+    
+           <th>
+            <div class="container">
+              <img src="../.images/youghurttur.jpg" alt="travel" class="image" style="width: 100%">
+              <div class="overlay">Youghurt</div>
+            </div>
+         </th>
+          </table>
+
+            <table>
+              <th>
+            <div class="container">
+              <img src="../.images/fruits.jpg"  alt="travel" class="image" style="width: 100%">
+              <div class="overlay">fruits</div>
+            </div>
+              </th>
+      
+             <th>
+                <div class="container">
+                  <img src="../.images/nutsand seeds.webp" alt="travel" class="image" style="width: 100%">
+                  <div class="overlay">Nuts</div>
+                </div>
+             </th>
+      
+              <th>
+               <div class="container">
+                 <img src="../.images/wholegrains.webp" alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">whole grains</div>
+               </div>
+            </th>
+       
+            <th>
+             <div class="container">
+               <img src="../.images/water.webp" alt="travel" class="image" style="width: 100%">
+               <div class="overlay">water</div>
+             </div>
+          </th>
+           </table>
+
+           <table>
+            <th>
+          <div class="container">
+            <img src="../.images/vegetables.jpg"  alt="travel" class="image" style="width: 100%">
+            <div class="overlay">Vegetables</div>
+          </div>
+            </th>
+    
+           <th>
+              <div class="container">
+                <img src="../.images/fluids.jpg" alt="travel" class="image" style="width: 100%">
+                <div class="overlay">juices</div>
+              </div>
+           </th>
+    
+            <th>
+             <div class="container">
+               <img src="../.images/milk products.jpg" alt="travel" class="image" style="width: 100%">
+               <div class="overlay">Milk products</div>
+             </div>
+          </th>
+     
+          <th>
+           <div class="container">
+             <img src="../.images/soyprodcuts.jpg" alt="travel" class="image" style="width: 100%">
+             <div class="overlay">soy product</div>
+           </div>
+        </th>
+         </table>
+
+           <center><h2 id="text">Images to avoid eating unhealthy food</h2></center>
+           
+           <center><p id="section-3">Keep the cursor on the image to know more details.</p></center>
+           <table>
+             <th>
+           <div class="container">
+             <img src="../.images/soda.jpg"  alt="travel" class="image" style="width: 100%">
+             <div class="overlay">cola soda</div>
+           </div>
+             </th>
+ 
+            <th>
+               <div class="container">
+                 <img src="../.images/softcheese.jpg" alt="travel" class="image" style="width: 100%">
+                 <div class="overlay">Soft Cheese</div>
+               </div>
+            </th>
+ 
+            <th>
+             <div class="container">
+               <img src="../.images/rawmeat.jpg" alt="travel" class="image" style="width: 100%">
+               <div class="overlay">Raw meat</div>
+             </div>
+          </th>
+ 
+          <th>
+           <div class="container">
+             <img src="../.images/raw egg.jpg" alt="travel" class="image" style="width: 100%">
+             <div class="overlay">Raw Egg</div>
+           </div>
+        </th>
+
+        <th>
+          <div class="container">
+            <img src="../.images/unpasturized milk.jpg" alt="travel" class="image" style="width: 100%">
+            <div class="overlay">Unpasteurized Milk</div>
+          </div>
+       </th>
+         </table>
+
+                <footer>
+                  <div class="main-content">
+                    <div class="left box">
+                      <h3>About us</h3>
+                      <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo praesentium assumenda sequi corporis, 
+                          est similique ipsa rem tempore aspernatur perspiciatis, provident accusantium eum laborum iure veritatis vero distinctio esse?</p>
+                        <div class="social">
+                          <a href="#"><span class="fab fa-facebook-f"></span></a>
+                          <a href="#"><span class="fab fa-twitter"></span></a>
+                          <a href="#"><span class="fab fa-instagram"></span></a>
+                          <a href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="center box">
+                      <h3>Address</h3>
+                      <div class="content">
+                        <div class="place">
+                          <span class="fa fa-map-marker"></span>
+                          <span class="text">Mathura,Vrindavan</span>                                     
+                        </div>
+                        <div class="phone">
+                          <span class="fa fa-phone"></span>
+                          <span class="text">91+ 7894561230</span>
+                        </div>
+                        <div class="email">
+                          <span class = "fa fa-envelope"></span>
+                          <span class = "text">abc@example.com</span>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="right box">
+                      <h3>Contact us</h3>
+                      <div class="content">
+                        <form action="#">
+                          <div class="email">
+                          <div class="text">Email *</div>
+                          <input type="email" required>
+                          </div>
+                          <div class="msg">
+                            <div class="text">Message *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                          </div>
+                          <div class="btn">
+                            <button type="submit">Send</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+    </body>
+</html>

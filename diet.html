@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf -8">
+      <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="./FontAwesome files/fontawesome.js"></script>
+        <link rel ="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+        
+        <style>
+          p    {color: rgb(255, 255, 255);}
+          p1 {color: rgb(255, 255, 255);}
+          h1 {
+            position: relative;
+            color: hsl(0, 0%, 0%);
+            font-weight: bold;
+            font-family: "Anonymous Pro", monospace;
+            letter-spacing: 7px;
+            overflow: hidden;
+            border-right: 2px solid hsl(0, 0%, 0%);
+            white-space: nowrap;
+            animation: typewriter 4s steps(100) 1s 1 normal both,
+              blinkTextCursor 500ms infinite;
+          }
+          .glow {
+              font-size: 60px;
+              color: #fff;
+              text-align: center;
+              animation: glow 1s ease-in-out infinite alternate;
+              font-family: cursive;
+            }
+            
+            @keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+              }
+              
+              to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+              }
+            }
+          
+          @keyframes typewriter {
+            from {
+              width: 0;
+            }
+            to {
+              width: 710px;
+            }
+          }
+          @keyframes blinkTextCursor {
+            from {
+              border-right-color: hsl(0, 0%, 80%);
+            }
+            to {
+              border-right-color: transparent;
+            }
+          }
+          .header {
+            z-index: 1;
+            background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(187, 59, 130));
+            background-size: 400% 400%;
+            overflow: hidden;
+            width: 100%;
+            animation: animate 10s ease infinite;
+          }
+          #up{
+            position: absolute;
+            height: 800px;
+            width: 800px;
+            border-radius: 50%;
+            background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(43, 247, 202, 0.5));
+            filter: blur(80px);
+            animation: down 40s infinite;
+          }
+          #down {
+            position: absolute;
+            right: 0;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-image: linear-gradient(80deg, rgb(226, 193, 83), rgb(230, 93, 168));
+            filter: blur(80px);
+            animation: down 30s  infinite;
+          }
+          #left {
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-image: linear-gradient(80deg, rgba(5, 124, 172), rgb(219, 153, 86));
+            filter: blur(80px);
+            animation: down 30s 1s infinite;
+          }
+          #right {
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-image: linear-gradient(80deg, rgb(255, 181, 78), rgba(241, 69, 106, 0.8));
+            filter: blur(80px);
+            animation: down 40s infinite;
+          }
+          @keyframes down{
+             0% , 100%{
+                 top: -100px;
+             }
+             70%{
+              top: 700px;
+             }
+          }
+          @keyframes up{
+             0% , 100%{
+                 bottom: -100px;
+             }
+             70%{
+              bottom: 700px;
+             }
+          }
+          @keyframes up{
+             0% , 100%{
+                 left: -100px;
+             }
+             70%{
+              left: 1300px;
+             }
+          }
+          @keyframes right{
+             0% , 100%{
+                 right: -100px;
+             }
+             70%{
+              right: 1300px;
+             }
+          }
+          .fit
+          {
+            height: 15vh;
+            width: 100%;
+                    }
+          nav{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-left: 60%;
+            padding-left: 10%;
+            padding-right: 10%;
+            backdrop-filter: blur(5px);
+          }
+          .logo{
+            color: aliceblue;
+            font-size: 30px;
+          }
+          nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+          }
+
+          nav ul li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .header ul li a:hover{
+            color: brown;
+            transition: .3s;
+          }
+
+          @keyframes animate {
+            0%{
+              background-position: 0 50%;
+            }
+            50%{
+              background-position: 100% 50%;
+            }
+            100%{
+              background-position: 0 50%;
+            }
+          }
+        </style>  
+          </head>
+    <body class="diet">
+      <section id = "up"></section>
+      <section id = "down"></section>
+      <section id = "left"></section>
+      <section id = "right"></section>
+      <div class="header">
+      <div class="fit">
+        <nav>
+          <h2 class="logo">Force <span style="color: brown;">Fitness</span></h2>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">plans</a></li>
+            <li><a href="#">exercise</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">login/sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div class="container" id="blur">
+            <div class="content">
+            
+                            <h1 class="glow">Effective Diet for growth....</h1>
+                            <p><b>If you have been a patient since long time , you should  probably know there are many dietary strategies 
+                              that can work very well to get you healthier and feeling better. The best diets out there minimize or eliminate 
+                              processed foods and stress regular meals of whole, natural foods (preferably home-cooked).
+                               In our view, the diet below has proved to be the best diet for overall health.</b></p><br>
+
+                               <img src=".images/jerry.gif" align ="right" style="width: 500px; height: 500px;">
+                        
+                            <p><span>&#8226;</span>&nbsp;<b> Make most of your meal vegetables and fruits – ½ of your plate.</b></p>
+                                <p>Aim for color and variety, and remember that potatoes don’t count as vegetables on the Healthy Eating Plate because of their negative impact on blood sugar.
+                                </p><br>
+                            <p><span>&#8226;</span>&nbsp;<b> Go for whole grains – ¼ of your plate.</b></p>
+                              <p>Whole and intact grains—whole wheat, barley, wheat berries, quinoa, oats, brown rice, and foods made with them, such as whole wheat pasta—have a milder effect on blood sugar and insulin than white bread, white rice, and other refined grains.
+                                </p><br>
+                            <p><span>&#8226;</span>&nbsp;<b> Protein power – ¼ of your plate.</b></p>
+                             <p>Fish, poultry, beans, and nuts are all healthy, versatile protein sources—they can be mixed into salads, and pair well with vegetables on a plate. Limit red meat, and avoid processed meats such as bacon and sausage.
+                                </p><br>
+                            <p><span>&#8226;</span>&nbsp;<b> Healthy plant oils – in moderation.</b></p>
+                             <p>Choose healthy vegetable oils like olive, canola, soy, corn, sunflower, peanut, and others, and avoid partially hydrogenated oils, which contain unhealthy trans fats. Remember that low-fat does not mean “healthy.”
+                                </p><br>
+                            <p><span>&#8226;</span>&nbsp;<b> Drink water, coffee, or tea.</b></p>
+                             <p>Skip sugary drinks, limit milk and dairy products to one to two servings per day, and limit juice to a small glass per day.
+                                </p><br>
+                            <p><span>&#8226;</span>&nbsp;<b> Stay active.</b></p>
+                             <p>The red figure running across the Healthy Eating Plate’s placemat is a reminder that staying active is also important in weight control.</p>
+                    
+                            <h1 class="glow"> Switch to a healthy diets....</h1>
+                    
+                            <p>&nbsp; Switching to a healthy diet doesn't have to be an all or nothing proposition. 
+                              You don't have to be perfect, you don't have to completely eliminate foods you enjoy,
+                               and you don't have to change everything all at once—that usually only leads to cheating or giving up on your new eating plan.</p><br>
+                    
+                            <p1>&nbsp; A better approach is to make a few small changes at a time. Keeping your goals modest can help you
+                               achieve more in the long term without feeling deprived or overwhelmed by a major diet overhaul. 
+                               Think of planning a healthy diet as a number of small, manageable steps—like adding a salad to your diet once a day.
+                                As your small changes become habit, you can continue to add more healthy choices.</p1>
+
+                            <h3>To know more about <b>Male</b> and <b>Female</b> diet according to your age then  -------click on the button given below------- </h3>
+                            
+                            <a href="#" class="right" onclick="toggle()">Read more</a>
+                            <a href="#"> Click here for Home Page</a>
+            </div>
+        </div>
+
+        <footer>
+          <div class="main-content">
+            <div class="left box">
+              <h2>About us</h2>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo praesentium assumenda sequi corporis, 
+                  est similique ipsa rem tempore aspernatur perspiciatis, provident accusantium eum laborum iure veritatis vero distinctio esse?</p>
+                <div class="social">
+                  <a href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-instagram"></span></a>
+                  <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="center box">
+              <h2>Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fa fa-map-marker"></span>
+                  <span class="text">Mathura,Vrindavan</span>                                     
+                </div>
+                <div class="phone">
+                  <span class="fa fa-phone"></span>
+                  <span class="text">91+ 7894561230</span>
+                </div>
+                <div class="email">
+                  <span class = "fa fa-envelope"></span>
+                  <span class = "text">abc@example.com</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="right box">
+              <h2>Contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+        <!--for Pop up -->
+       <div id="popup">
+                <h2>Select Your Gender:</h2>
+                <a href="male.html" >Male</a>
+                <a href="female.html" >Female</a>
+                <a href="diet.html" onclick="toggle()">Close</a>   
+       </div> 
+       
+       <!-- script for read more button in line 68-->
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" type="text/css" href="style.css">
+        <style>
+            img.background {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                -webkit-filter: blur(1px);
+                        filter: blur(1px);
+                    }
+            button {
+               background-color: rgb(18, 5, 95);
+               color: white;
+               padding: 16px;
+               font-size: 20px;
+               width: 50;
+               position: relative;
+               font-weight: bolder;
+               font-family: monospace, sans-serif;
+               border: none;
+               outline: none;
+            }
+            .dropMenu {
+               display: inline-block;                             
+            }
+            .dropMenu button {
+                border-left: 1px solid #c0a0fb;
+            }
+            .dropContent {
+                display: none;
+               position: absolute;
+               background-color: #f1f1f1;                          
+               min-width: 160px;
+               z-index: 1;
+            }
+            .dropContent a {
+                color: black;
+               background-color: rgb(184, 253, 255);
+               font-size: 14px;
+               font-weight: bold;
+               padding: 12px 16px;
+               text-decoration: none;
+               display: block;
+            }
+            .dropContent a:hover {
+                background-color: rgb(48, 0, 110);
+               color: white;
+            }
+            .dropMenu:hover .dropContent {
+                display: block;
+            }
+            .btn:hover,
+            .dropMenu:hover .btn {
+                background-color: #0b7dda;
+            }
+        </style>
+    </head>
+<body class="diet2">
+
+    <img class="background" src=".images/smoke.gif" alt="phto">
+
+    <div class="popup">
+
+     <button class="button button1" id="close">&times;</button>
+
+     <h2>
+        Select According to your Category :
+     </h2>
+        <button>Adult</button>
+        <div class="dropMenu">
+        <button>
+        >>
+        </button>
+        <div class="dropContent">
+        <a href=".child_adult_subdivision/madult1.html">40 to 60 years</a>
+        <a href=".child_adult_subdivision/madult2.html">60 to 80 years</a>
+        <a href=".child_adult_subdivision/madult3.html">Above 80 years</a>
+        </div>
+        </div>
+        <a href="diet.html" >Close</a>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("load",
+        function(){
+            setTimeout(
+            function open(event) {
+                document.querySelector(".popup").style.display="block";
+            },1000
+            )
+        }
+        );
+
+document.querySelector("#close").addEventListener("click",
+     function(){
+        document.querySelector(".popup").style.display = "none";
+     }
+);
+</script>
+</body>
+</html>
